@@ -1,0 +1,79 @@
+using Microsoft.EntityFrameworkCore;
+using TravelApi.Entities;
+using TravelApi.Enums;
+using TravelApi.Services;
+using TravelApi.Data;
+
+namespace TravelApi.Services;
+
+public interface IRoomBookingService
+{
+    Task<List<RoomsBooking>> GetAllAsync(Guid customerId);
+    Task<(RoomsBooking? Booking, string? Error)> CreateAsync(Guid customerId, RoomsBooking booking);
+
+}
+
+public class RoomBookingService : IRoomBookingService
+{
+    readonly AppDbContext _db;
+
+    public RoomBookingService(AppDbContext db)
+
+    {
+        _db = db;
+    }
+
+    public async Task<List<RoomsBooking>> GetAllAsync(Guid customerId)
+    {
+        return await _db.RoomsBookings
+            .Include(b => b.Room)
+            .Include(b => b.Traveller)
+            .Where(b => b.Traveller!.CustomerId == customerId)
+            .OrderByDescending(b => b.CheckIn)
+            .ToListAsync();
+    }
+    public async Task<(RoomsBooking? Booking, string? Error)> CreateAsync(Guid customerId, RoomsBooking booking)
+    {
+        // 1. Basic date and quantity checks
+        if (booking.CheckOut <= booking.CheckIn)
+            return (null, "Check-out must be after check-in.");
+
+        if (booking.CheckIn < DateOnly.FromDateTime(DateTime.UtcNow))
+            return (null, "Check-in cannot be in the past.");
+
+        if (booking.NumberOfRooms < 1)
+            return (null, "Book at least one room.");
+
+        // 2. The traveller must exist and belong to this customer
+        var traveller = await _db.Travellers
+            .FirstOrDefaultAsync(t => t.Id == booking.TravellerId && t.CustomerId == customerId);
+        if (traveller == null)
+            return (null, "Traveller not found.");
+
+        // 3. The room must exist
+        var room = await _db.Rooms.FirstOrDefaultAsync(r => r.Id == booking.RoomId);
+        if (room == null)
+            return (null, "Room not found.");
+
+        // 4. Enough rooms must be free for those dates
+        var alreadyBooked = await _db.RoomsBookings
+            .Where(b => b.RoomId == booking.RoomId
+                     && b.RoomStatus != RequestStatus.Unavailable
+                     && b.CheckIn < booking.CheckOut
+                     && b.CheckOut > booking.CheckIn)
+            .SumAsync(b => b.NumberOfRooms);
+
+        var roomsLeft = room.TotalRooms - alreadyBooked;
+        if (booking.NumberOfRooms > roomsLeft)
+            return (null, $"Only {Math.Max(roomsLeft, 0)} room(s) left for those dates.");
+
+        // 5. Save
+        booking.Id = Guid.NewGuid();
+        booking.RoomStatus = RequestStatus.Confirmed;
+        _db.RoomsBookings.Add(booking);
+        await _db.SaveChangesAsync();
+
+        return (booking, null);
+    }
+}
+
