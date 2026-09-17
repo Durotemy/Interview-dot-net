@@ -1,0 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using TravelApi.Entities;
+// using learning.Models;
+
+namespace TravelApi.Data;
+
+public class AppDbContext : DbContext
+{
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+    public DbSet<Traveller> Travellers => Set<Traveller>();
+    public DbSet<RoomsBooking> RoomsBookings => Set<RoomsBooking>();
+
+    public DbSet<FlightBooking> FlightBookings => Set<FlightBooking>();
+
+    public DbSet<Room> Rooms => Set<Room>();
+
+}
+
