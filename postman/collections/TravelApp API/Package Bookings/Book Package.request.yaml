@@ -1,18 +1,18 @@
 $kind: http-request
 method: POST
-url: "{{baseUrl}}/api/v1/customers/{{customerId}}/packages/{{packageId}}/bookings"
+url: '{{baseUrl}}/api/v1/customers/{{customerId}}/packages/{{packageId}}/bookings'
 order: 1000
 headers:
-  Content-Type: application/json
+  - key: Content-Type
+    value: application/json
 body:
   type: json
   content: |-
     {
-      "travellerId": "{{travellerId}}",
-      "checkIn": "2025-06-10",
-      "checkOut": "2025-06-15",
+      "checkIn": "2026-12-01",
+      "checkOut": "2026-12-07",
       "numberOfRooms": 1,
-      "departureDate": "2025-06-10",
-      "meal": 1,
-      "seatPreference": 1
+      "departureDate": "2026-12-01",
+      "meal": 0,
+      "seatPreference": 0
     }

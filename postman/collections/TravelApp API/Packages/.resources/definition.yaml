@@ -1,0 +1,9 @@
+$kind: collection
+name: Packages
+description: |-
+  Manage travel packages — bundles of a flight and a room.
+
+  **Base route:** `api/v1/packages`
+
+  After creating a package, copy the returned `id` into the `packageId` environment variable.
+order: 6000

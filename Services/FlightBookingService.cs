@@ -29,32 +29,31 @@ public class FlightBookingService : IFlightBooking
 
     {
         return await _db.FlightBookings
-            .Include(f => f.Traveller)
-            .Where(f => f.Traveller!.CustomerId == customerId)
+            .Where(f => f.CustomerId == customerId)
             .ToListAsync();
     }
 
     public async Task<FlightBooking?> GetByIdAsync(Guid customerId, Guid id)
     {
         return await _db.FlightBookings
-        .Include(t => t.Traveller)
-        .FirstOrDefaultAsync(t => t.Id == id && t.Traveller!.CustomerId == customerId);
+        .FirstOrDefaultAsync(f => f.Id == id && f.CustomerId == customerId);
     }
     public async Task<(FlightBooking? Booking, string? Error)> CreateAsync(Guid customerId, FlightBooking flightBooking)
     {
-        var traveller = await _db.Travellers.FirstOrDefaultAsync(t => t.Id == flightBooking.TravellerId && t.CustomerId == customerId);
+        var customer = await _db.Customers.FirstOrDefaultAsync(c => c.Id == customerId);
 
-        if (traveller == null)
+        if (customer == null)
         {
-            return (null, "Traveller not found.");
+            return (null, "Customer not found.");
         }
 
         flightBooking.Id = Guid.NewGuid();
+        flightBooking.CustomerId = customerId;
         flightBooking.MealStatus = RequestStatus.Requested;
 
-        if (traveller.SecurityConcerns)
+        if (customer.SecurityConcerns)
         {
-            // Flagged travellers need manual clearance before a seat is assigned.
+            // Flagged customers need manual clearance before a seat is assigned.
             flightBooking.SeatStatus = RequestStatus.Requested;
             flightBooking.AssignedSeat = null;
         }
@@ -90,8 +89,7 @@ public class FlightBookingService : IFlightBooking
     public async Task<FlightBooking?> UpdatePreferencesAsync(Guid customerId, Guid id, MealPreference meal, SeatPreference seat)
     {
         var booking = await _db.FlightBookings
-            .Include(t => t.Traveller)
-            .FirstOrDefaultAsync(t => t.Id == id && t.Traveller!.CustomerId == customerId);
+            .FirstOrDefaultAsync(f => f.Id == id && f.CustomerId == customerId);
 
         if (booking == null)
         {

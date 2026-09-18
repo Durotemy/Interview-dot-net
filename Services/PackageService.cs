@@ -7,7 +7,6 @@ namespace TravelApi.Services;
 
 public class PackageBookingRequest
 {
-    public Guid TravellerId { get; set; }
     public DateOnly CheckIn { get; set; }
     public DateOnly CheckOut { get; set; }
     public int NumberOfRooms { get; set; } = 1;
@@ -76,7 +75,6 @@ public class PackageService : IPackageService
         var roomBooking = new RoomsBooking
         {
             RoomId = package.RoomId,
-            TravellerId = request.TravellerId,
             CheckIn = request.CheckIn,
             CheckOut = request.CheckOut,
             NumberOfRooms = request.NumberOfRooms,
@@ -91,7 +89,6 @@ public class PackageService : IPackageService
 
         var flightBooking = new FlightBooking
         {
-            TravellerId = request.TravellerId,
             FlightNumber = package.FlightNumber,
             Origin = package.Origin,
             Destination = package.Destination,

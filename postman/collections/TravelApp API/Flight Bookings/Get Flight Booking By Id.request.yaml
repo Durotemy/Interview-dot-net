@@ -1,5 +1,4 @@
 $kind: http-request
-name: Get Flight Booking By Id
 method: GET
 url: '{{baseUrl}}/api/v1/customers/{{customerId}}/flight-bookings/{{flightBookingId}}'
 order: 2000

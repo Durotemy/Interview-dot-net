@@ -1,5 +1,0 @@
-$kind: http-request
-name: Get All Rooms
-url: "{{baseUrl}}/api/v1/rooms"
-method: GET
-order: 1707

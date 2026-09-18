@@ -1,0 +1,11 @@
+$kind: collection
+name: Rooms
+description: |-
+  Manage the room catalog and check availability.
+
+  **Base route:** `api/v1/rooms`
+
+  After creating a room, copy the returned `id` into the `roomId` environment variable.
+
+  **RoomCategory values:** 0 = Standard, 1 = Family, 2 = Single
+order: 4000

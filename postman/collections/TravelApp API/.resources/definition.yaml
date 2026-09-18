@@ -1,12 +1,10 @@
 $kind: collection
 name: TravelApp API
 description: |-
-  Collection for the TravelApp REST API.
-  Covers Travellers, Flight Bookings, Rooms, Room Bookings, Packages, and Package Bookings.
-variables:
-  - key: baseUrl
-    value: 'http://localhost:5154'
-    description: Base URL for the TravelApp API
-  - key: customerId
-    value: '00000000-0000-0000-0000-000000000000'
-    description: Customer GUID used across routes
+  REST API for the TravelApp platform — a travel booking system built with ASP.NET Core (.NET 10) and PostgreSQL.
+
+  Covers Customers, Travellers, Flight Bookings, Rooms, Room Bookings, Packages, and Package Bookings.
+
+  **Base URL:** {{baseUrl}}
+
+  Make sure the **TravelApp - Local** environment is selected before sending requests.

@@ -22,6 +22,46 @@ namespace learning4.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("TravelApi.Entities.Customer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateOnly>("DateOfBirth")
+                        .HasColumnType("date");
+
+                    b.Property<bool>("Disabilty")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Nationality")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("SecurityConcerns")
+                        .HasColumnType("boolean");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Customers");
+                });
+
             modelBuilder.Entity("TravelApi.Entities.FlightBooking", b =>
                 {
                     b.Property<Guid>("Id")
@@ -30,6 +70,9 @@ namespace learning4.Migrations
 
                     b.Property<string>("AssignedSeat")
                         .HasColumnType("text");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
 
                     b.Property<DateOnly>("DepartureDate")
                         .HasColumnType("date");
@@ -58,12 +101,9 @@ namespace learning4.Migrations
                     b.Property<int>("SeatStatus")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("TravellerId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("TravellerId");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("FlightBookings");
                 });
@@ -147,6 +187,9 @@ namespace learning4.Migrations
                     b.Property<DateOnly>("CheckOut")
                         .HasColumnType("date");
 
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
+
                     b.Property<int>("NumberOfRooms")
                         .HasColumnType("integer");
 
@@ -156,55 +199,24 @@ namespace learning4.Migrations
                     b.Property<int>("RoomStatus")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("TravellerId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("RoomId");
+                    b.HasIndex("CustomerId");
 
-                    b.HasIndex("TravellerId");
+                    b.HasIndex("RoomId");
 
                     b.ToTable("RoomsBookings");
                 });
 
-            modelBuilder.Entity("TravelApi.Entities.Traveller", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("CustomerId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateOnly>("DateOfBirth")
-                        .HasColumnType("date");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<bool>("SecurityConcerns")
-                        .HasColumnType("boolean");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Travellers");
-                });
-
             modelBuilder.Entity("TravelApi.Entities.FlightBooking", b =>
                 {
-                    b.HasOne("TravelApi.Entities.Traveller", "Traveller")
+                    b.HasOne("TravelApi.Entities.Customer", "Customer")
                         .WithMany()
-                        .HasForeignKey("TravellerId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Traveller");
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("TravelApi.Entities.Package", b =>
@@ -220,21 +232,21 @@ namespace learning4.Migrations
 
             modelBuilder.Entity("TravelApi.Entities.RoomsBooking", b =>
                 {
+                    b.HasOne("TravelApi.Entities.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("TravelApi.Entities.Room", "Room")
                         .WithMany()
                         .HasForeignKey("RoomId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TravelApi.Entities.Traveller", "Traveller")
-                        .WithMany()
-                        .HasForeignKey("TravellerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Customer");
 
                     b.Navigation("Room");
-
-                    b.Navigation("Traveller");
                 });
 #pragma warning restore 612, 618
         }

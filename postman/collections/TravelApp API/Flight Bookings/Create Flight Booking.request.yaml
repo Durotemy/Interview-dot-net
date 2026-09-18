@@ -1,5 +1,4 @@
 $kind: http-request
-name: Create Flight Booking
 method: POST
 url: '{{baseUrl}}/api/v1/customers/{{customerId}}/flight-bookings'
 order: 3000
@@ -10,11 +9,10 @@ body:
   type: json
   content: |-
     {
-      "travellerId": "{{travellerId}}",
-      "flightNumber": "AA123",
-      "origin": "New York",
-      "destination": "London",
-      "departureDate": "2025-06-01",
+      "flightNumber": "LH401",
+      "origin": "LOS",
+      "destination": "LHR",
+      "departureDate": "2026-12-01",
       "meal": 0,
       "seatPreference": 0
     }

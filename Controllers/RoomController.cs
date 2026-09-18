@@ -40,5 +40,16 @@ public class RoomController : ControllerBase
         return Ok(created);
     }
 
+    [HttpGet("{id:guid}/availability")]
+    public async Task<IActionResult> GetAvailability(Guid id, [FromQuery] DateOnly checkIn, [FromQuery] DateOnly checkOut)
+    {
+        var (roomsLeft, error) = await _roomService.GetAvailabilityAsync(id, checkIn, checkOut);
+        if (error != null)
+        {
+            return BadRequest(error);
+        }
+        return Ok(new { roomId = id, checkIn, checkOut, roomsLeft });
+    }
+
 }
 

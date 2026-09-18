@@ -1,7 +1,7 @@
 {
   "Controllers/FlightBookingController.cs": {
-    "mtime": 1789669539.4026656,
-    "ast_hash": "0b51d463724c6920dadcfcf272f07c9b",
+    "mtime": 1789727897.1176236,
+    "ast_hash": "38573c72005b566e58ec658e164b017e",
     "semantic_hash": ""
   },
   "Controllers/PackageBookingController.cs": {
@@ -20,23 +20,18 @@
     "semantic_hash": ""
   },
   "Controllers/RoomController.cs": {
-    "mtime": 1789655011.408433,
-    "ast_hash": "f68e6359be9f934192899875737170dd",
-    "semantic_hash": ""
-  },
-  "Controllers/TravelController.cs": {
-    "mtime": 1789650077.7831833,
-    "ast_hash": "60f6edaf123b2e249cc62c0e7d0e4a1f",
+    "mtime": 1789729410.0523345,
+    "ast_hash": "6ac9f14bdc75f44ec03717e83efa3d6e",
     "semantic_hash": ""
   },
   "Data/AppDbContext.cs": {
-    "mtime": 1789708624.3364472,
-    "ast_hash": "ad62755275348708fc5a75f39534580f",
+    "mtime": 1789738259.7940218,
+    "ast_hash": "01b2175775b089e907ef51b4d6d32d8d",
     "semantic_hash": ""
   },
   "Entities/FlightBooking.cs": {
-    "mtime": 1789646476.496208,
-    "ast_hash": "41ab9568ce6aedfa07fb6bca7bb70d96",
+    "mtime": 1789738146.7153103,
+    "ast_hash": "73ee16c02f29f57ac39f3b742042d345",
     "semantic_hash": ""
   },
   "Entities/Package.cs": {
@@ -50,13 +45,8 @@
     "semantic_hash": ""
   },
   "Entities/RoomsBooking.cs": {
-    "mtime": 1789646953.8458097,
-    "ast_hash": "411dd4b703bed5df01aa097d93c90697",
-    "semantic_hash": ""
-  },
-  "Entities/Traveller.cs": {
-    "mtime": 1789604832.133429,
-    "ast_hash": "ef976a542d742408682c7e62556507ea",
+    "mtime": 1789738100.908242,
+    "ast_hash": "b29c9ce89a815aa4c3949ed56200e423",
     "semantic_hash": ""
   },
   "Migrations/20260917010720_InitialCreate.Designer.cs": {
@@ -90,13 +80,13 @@
     "semantic_hash": ""
   },
   "Migrations/AppDbContextModelSnapshot.cs": {
-    "mtime": 1789708645.9353771,
-    "ast_hash": "4261b15f5e8cedc498b17aabea1915b7",
+    "mtime": 1789738302.1143432,
+    "ast_hash": "4b6bf784b6ac6e497a7777ad6c79e3a6",
     "semantic_hash": ""
   },
   "Program.cs": {
-    "mtime": 1789708625.4016018,
-    "ast_hash": "d22d6079361f2d962bbc848b1b3c1a28",
+    "mtime": 1789738265.2496963,
+    "ast_hash": "f7dea6a892c4500ba9c08df6fd9e7c13",
     "semantic_hash": ""
   },
   "Properties/launchSettings.json": {
@@ -105,28 +95,23 @@
     "semantic_hash": ""
   },
   "Services/FlightBookingService.cs": {
-    "mtime": 1789669912.6194246,
-    "ast_hash": "4b452677639d73f606e1e264abcb17a7",
+    "mtime": 1789738199.6546097,
+    "ast_hash": "9bbdff6094da8c8ac1d2e7b02328e9df",
     "semantic_hash": ""
   },
   "Services/PackageService.cs": {
-    "mtime": 1789707271.2764587,
-    "ast_hash": "3a07866fc4e43fd3ee627b0ba25e02d7",
+    "mtime": 1789738224.1484203,
+    "ast_hash": "d61120facbad0a6493a3e46412437575",
     "semantic_hash": ""
   },
   "Services/RoomBookingService.cs": {
-    "mtime": 1789657120.832788,
-    "ast_hash": "95b9d714507ed17fc585e24abc6f510b",
+    "mtime": 1789738163.6472173,
+    "ast_hash": "928194abd12b3f33a846467c4fdf1394",
     "semantic_hash": ""
   },
   "Services/RoomService.cs": {
-    "mtime": 1789650305.362097,
-    "ast_hash": "c3c2da231044a68b296099f67bf1d1cd",
-    "semantic_hash": ""
-  },
-  "Services/TravellerService.cs": {
-    "mtime": 1789708747.694391,
-    "ast_hash": "d145cb8a1ed5f56a1923d6119aa20068",
+    "mtime": 1789729402.7804637,
+    "ast_hash": "c3b01bfb5a9b96f5e8da305282da8239",
     "semantic_hash": ""
   },
   "enum/MealPreference.cs": {
@@ -160,8 +145,8 @@
     "semantic_hash": ""
   },
   "obj/Debug/net10.0/learning4.AssemblyInfo.cs": {
-    "mtime": 1789707259.9905496,
-    "ast_hash": "12c1b5392d5d5284614a16e2c994670e",
+    "mtime": 1789729366.7579706,
+    "ast_hash": "675d1aeba75793158396935458c567e5",
     "semantic_hash": ""
   },
   "obj/Debug/net10.0/learning4.GlobalUsings.g.cs": {
@@ -175,8 +160,218 @@
     "semantic_hash": ""
   },
   "obj/Debug/net10.0/learning4.csproj.FileListAbsolute.txt": {
-    "mtime": 1789605854.4530404,
-    "ast_hash": "5df7fd370f90d9d10b13628857de81c4",
+    "mtime": 1789737374.7656674,
+    "ast_hash": "609eaf32358ca4076d9fc13e01944429",
+    "semantic_hash": ""
+  },
+  "Controllers/CustomerController.cs": {
+    "mtime": 1789738247.9905102,
+    "ast_hash": "a087acd2ce7e334dddcabdb08bee3446",
+    "semantic_hash": ""
+  },
+  "Entities/Customer.cs": {
+    "mtime": 1789738090.7985792,
+    "ast_hash": "2f0f595e5dfa4668317d51c56872e11a",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918110402_AddCustomers.Designer.cs": {
+    "mtime": 1789729442.8615892,
+    "ast_hash": "9a5d084ab4d363ddbe7a9e736d36950a",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918110402_AddCustomers.cs": {
+    "mtime": 1789729442.8613334,
+    "ast_hash": "0d5208ae4aae0c239f8f5100c021e859",
+    "semantic_hash": ""
+  },
+  "Services/CustomerService.cs": {
+    "mtime": 1789738240.8350275,
+    "ast_hash": "0924f08d751d07f9eb08bf9e9d285312",
+    "semantic_hash": ""
+  },
+  ".postman/resources.yaml": {
+    "mtime": 1789731276.946343,
+    "ast_hash": "28b57a5e27b9bcca0874c09fb7adbc34",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/.resources/definition.yaml": {
+    "mtime": 1789731476.2545173,
+    "ast_hash": "5b8ce2d6b90450c16d9f1c02ee9fbd87",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Flight Bookings/Create Flight Booking.request.yaml": {
+    "mtime": 1789732105.2655776,
+    "ast_hash": "4b138ebcadf6dba9fd0bfc49ae487361",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Flight Bookings/Get All Flight Bookings.request.yaml": {
+    "mtime": 1789732105.124815,
+    "ast_hash": "e4522c3c5cf6bfe72e92b8ee3a528a99",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Flight Bookings/Update Flight Preferences.request.yaml": {
+    "mtime": 1789732105.3551617,
+    "ast_hash": "3785cdb36db9a89ae7ad9e679a30b207",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Package Bookings/Book Package.request.yaml": {
+    "mtime": 1789732114.2036648,
+    "ast_hash": "0b2c6c12d8d2ef6cb9de2fb7743f624e",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Packages/Create Package.request.yaml": {
+    "mtime": 1789732114.1388679,
+    "ast_hash": "0993c94fbbcfcf3c55850b8a1a285957",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Room Bookings/Get All Room Bookings.request.yaml": {
+    "mtime": 1789732113.7754762,
+    "ast_hash": "a37d76403781a297b0071afd33785ae7",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Travellers/Create Traveller.request.yaml": {
+    "mtime": 1789731982.8967254,
+    "ast_hash": "ba6f33a277551b25fad1b10e7cb292c9",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Travellers/Get All Travellers.request.yaml": {
+    "mtime": 1789731982.9507892,
+    "ast_hash": "e2d536f8b49676c90baf824897c2784d",
+    "semantic_hash": ""
+  },
+  "postman/environments/TravelApp.environment.yaml": {
+    "mtime": 1789713769.83993,
+    "ast_hash": "9ea27679982d14d4e6de8d67e653f8e2",
+    "semantic_hash": ""
+  },
+  "postman/globals/workspace.globals.yaml": {
+    "mtime": 1789713616.1928563,
+    "ast_hash": "1f31f0e4d6a7b594d17c1e596c93528c",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918124908_AddCustomerDetails.Designer.cs": {
+    "mtime": 1789735748.7889664,
+    "ast_hash": "7ea53792e4276f6f5cc287dacbb098ae",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918124908_AddCustomerDetails.cs": {
+    "mtime": 1789735748.7886744,
+    "ast_hash": "93c94f12a17500afa8fd24a130038e64",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918131305_AddTravellerIsSelf.Designer.cs": {
+    "mtime": 1789737185.6718822,
+    "ast_hash": "a15ecf51973165ccc77c41994a4cda0a",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918131305_AddTravellerIsSelf.cs": {
+    "mtime": 1789737185.6714346,
+    "ast_hash": "084469d42efe0c3919a54fc1567a741d",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Customers/.resources/definition.yaml": {
+    "mtime": 1789731548.4348567,
+    "ast_hash": "f4dd72b260ca99ae8a1dd460c7c669ed",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Customers/Get Customer by ID.request.yaml": {
+    "mtime": 1789731982.805236,
+    "ast_hash": "48336ee5fbf2d8f8ee831183f73f0034",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Customers/Register Customer.request.yaml": {
+    "mtime": 1789731982.7071981,
+    "ast_hash": "7be4e30f27840796b10086eb74e0746e",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Flight Bookings/.resources/definition.yaml": {
+    "mtime": 1789731548.657401,
+    "ast_hash": "b2abe615fa78415792583a37153e3802",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Flight Bookings/Get Flight Booking by ID.request.yaml": {
+    "mtime": 1789732105.1920683,
+    "ast_hash": "dbc38a272317c34b22a8969f9e0a39b4",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Package Bookings/.resources/definition.yaml": {
+    "mtime": 1789731548.9685054,
+    "ast_hash": "858594dccd53821e13108547d8b69b52",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Packages/.resources/definition.yaml": {
+    "mtime": 1789731548.8673122,
+    "ast_hash": "7b73ceb6f7c0473bfcde1186948dd273",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Packages/Get All Packages.request.yaml": {
+    "mtime": 1789732113.9566941,
+    "ast_hash": "b526d8bf0cb5d5d0232ac916b498b705",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Packages/Get Package by ID.request.yaml": {
+    "mtime": 1789732114.0645523,
+    "ast_hash": "31ba28c812e6068d83d7331a003d3312",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Room Bookings/.resources/definition.yaml": {
+    "mtime": 1789731548.7931213,
+    "ast_hash": "bdb2a2d1737bad3b5c9513891b98eec7",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Room Bookings/Create Room Booking.request.yaml": {
+    "mtime": 1789732113.866389,
+    "ast_hash": "7439bc48300f2f00d04cffd1b2cf4d88",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Rooms/.resources/definition.yaml": {
+    "mtime": 1789731548.7204087,
+    "ast_hash": "2998c72752d591d5811507dbb5109378",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Rooms/Check Room Availability.request.yaml": {
+    "mtime": 1789732105.688719,
+    "ast_hash": "e607281a72488de85398df1a0a70403e",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Rooms/Create Room.request.yaml": {
+    "mtime": 1789732105.6053705,
+    "ast_hash": "5e55904feb3fc1959d0977c4c773e08e",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Rooms/Get All Rooms.request.yaml": {
+    "mtime": 1789732105.4394279,
+    "ast_hash": "2104ac4774b14448e97cd408af06fa03",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Rooms/Get Room by ID.request.yaml": {
+    "mtime": 1789732105.5224311,
+    "ast_hash": "2330cfb3805f3c8870f9ec026f54fecd",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Travellers/.resources/definition.yaml": {
+    "mtime": 1789731548.5278034,
+    "ast_hash": "899101dd50d9d8aee508dd02c8a70283",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Travellers/Delete Traveller.request.yaml": {
+    "mtime": 1789731983.1027722,
+    "ast_hash": "2f5a1ac1ed01442e1edef31b2e57f15e",
+    "semantic_hash": ""
+  },
+  "postman/collections/TravelApp API/Travellers/Get Traveller by ID.request.yaml": {
+    "mtime": 1789731983.0401914,
+    "ast_hash": "e9bf7cc4c3eec6e260b15f130587f36e",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918133142_MergeTravellerIntoCustomer.Designer.cs": {
+    "mtime": 1789738302.1139226,
+    "ast_hash": "ae533ae1a218b0e1e994a79713bfbc1a",
+    "semantic_hash": ""
+  },
+  "Migrations/20260918133142_MergeTravellerIntoCustomer.cs": {
+    "mtime": 1789738302.1136374,
+    "ast_hash": "cfd772bbce7665a46c7406dc7da39adc",
     "semantic_hash": ""
   }
 }

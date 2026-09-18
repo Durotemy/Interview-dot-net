@@ -1,0 +1,11 @@
+$kind: http-request
+method: GET
+url: '{{baseUrl}}/api/v1/rooms/{{roomId}}/availability?checkIn=2026-12-01&checkOut=2026-12-07'
+order: 4000
+queryParams:
+  - key: checkIn
+    value: '2026-12-01'
+    description: 'Check-in date (YYYY-MM-DD)'
+  - key: checkOut
+    value: '2026-12-07'
+    description: 'Check-out date (YYYY-MM-DD)'

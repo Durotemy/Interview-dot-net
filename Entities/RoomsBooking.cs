@@ -11,7 +11,7 @@ public class RoomsBooking
     public DateOnly CheckOut { get; set; }
     public int NumberOfRooms { get; set; } = 1;
     public RequestStatus RoomStatus { get; set; } = RequestStatus.Requested;
-    public Guid TravellerId { get; set; }
-    public Traveller? Traveller { get; set; }
+    public Guid CustomerId { get; set; }
+    public Customer? Customer { get; set; }
 
 }

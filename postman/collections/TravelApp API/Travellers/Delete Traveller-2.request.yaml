@@ -1,4 +1,0 @@
-$kind: http-request
-method: DELETE
-url: "{{baseUrl}}/api/v1/customers/{{01a0b2f4-fea7-74c5-8689-6f4f4d098f16}}/travellers/{{travellerId}}"
-order: 4000

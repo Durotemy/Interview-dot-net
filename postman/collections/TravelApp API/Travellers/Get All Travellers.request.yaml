@@ -1,4 +1,0 @@
-$kind: http-request
-method: GET
-url: "{{baseUrl}}/api/v1/customers/825b7779-472b-4ad3-88b5-b09252fef5fc/travellers"
-order: 2000

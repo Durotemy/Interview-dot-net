@@ -5,7 +5,7 @@ namespace TravelApi.Entities;
 public class FlightBooking
 {
     public Guid Id { get; set; }
-    public Guid TravellerId { get; set; }
+    public Guid CustomerId { get; set; }
     public string FlightNumber { get; set; } = "";
     public string Origin { get; set; } = "";
     public string Destination { get; set; } = "";
@@ -15,6 +15,6 @@ public class FlightBooking
     public SeatPreference SeatPreference { get; set; } = SeatPreference.NoPreference;
     public string? AssignedSeat { get; set; }
     public RequestStatus SeatStatus { get; set; } = RequestStatus.Requested;
-    public Traveller? Traveller { get; set; }
+    public Customer? Customer { get; set; }
 }
 

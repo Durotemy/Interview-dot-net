@@ -1,0 +1,13 @@
+$kind: collection
+name: Flight Bookings
+description: |-
+  Create and manage flight bookings for a customer.
+
+  **Base route:** `api/v1/customers/{customerId}/flight-bookings`
+
+  Requires `customerId` and `travellerId` to be set in the environment.
+
+  **MealPreference values:** 0 = Standard, 1 = LightFood, 2 = Cereal, 3 = Protein
+
+  **SeatPreference values:** 0 = NoPreference, 1 = WindowSeat
+order: 3000

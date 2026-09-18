@@ -1,0 +1,20 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/api/v1/customers/register'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "dateOfBirth": "1990-01-15",
+      "nationality": "Nigerian",
+      "disabilty": false,
+      "phoneNumber": "+2348012345678",
+      "securityConcerns": false
+    }

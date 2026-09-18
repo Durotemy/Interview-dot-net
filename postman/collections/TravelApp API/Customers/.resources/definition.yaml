@@ -1,0 +1,9 @@
+$kind: collection
+name: Customers
+description: |-
+  Endpoints for registering and retrieving customers.
+
+  **Base route:** `api/v1/customers`
+
+  After registering a customer, copy the returned `id` into the `customerId` environment variable.
+order: 1000

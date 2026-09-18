@@ -1,5 +1,9 @@
 // dotnet add package Microsoft.EntityFrameworkCore.Design
 // dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 // dotnet ef migrations add InitialCreate
+// dotnet ef database update
 // psql postgres -c "CREATE ROLE postgres WITH LOGIN SUPERUSER PASSWORD 'devpass';"
+
+
+dotnet ef migrations removey
 
