@@ -18,7 +18,11 @@ public class TravellersController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(Guid customerId, Traveller traveller)
     {
-        var created = await _travellerService.CreateAsync(customerId, traveller);
+        var (created, error) = await _travellerService.CreateAsync(customerId, traveller);
+        if (error != null)
+        {
+            return BadRequest(error);
+        }
         return Ok(created);
     }
 
@@ -30,9 +34,9 @@ public class TravellersController : ControllerBase
         return Ok(travellers);
     }
     [HttpGet("{id:guid}")]
-    public async Task<IActionResult> GetById(Guid customerId)
+    public async Task<IActionResult> GetById(Guid customerId, Guid id)
     {
-        var traveller = await _travellerService.GetByIdAsync(customerId);
+        var traveller = await _travellerService.GetByIdAsync(customerId, id);
         if (traveller == null)
         {
             return NotFound();

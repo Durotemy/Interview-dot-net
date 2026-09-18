@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Package By Id
+url: "{{baseUrl}}/api/v1/packages/{{packageId}}"
+method: GET
+order: 2521

@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Traveller By Id
+url: "{{baseUrl}}/api/v1/customers/{{customerId}}/travellers/{{travellerId}}"
+method: GET
+order: 3616

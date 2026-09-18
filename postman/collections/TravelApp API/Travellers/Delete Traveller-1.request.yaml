@@ -1,0 +1,5 @@
+$kind: http-request
+name: Delete Traveller
+url: "{{baseUrl}}/api/v1/customers/{{customerId}}/travellers/{{travellerId}}"
+method: DELETE
+order: 1179649593838472

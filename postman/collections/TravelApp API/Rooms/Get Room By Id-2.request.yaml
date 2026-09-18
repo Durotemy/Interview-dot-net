@@ -1,0 +1,4 @@
+$kind: http-request
+method: GET
+url: "{{baseUrl}}/api/v1/rooms/561d24a5-e3fb-4852-aadc-148dc82c793e"
+order: 2000

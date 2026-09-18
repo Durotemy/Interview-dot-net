@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/customers/{{customerId}}/travellers"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "dateOfBirth": "1990-05-15",
+      "securityConcerns": false
+    }
+order: 1898

@@ -100,11 +100,11 @@ public class PackageService : IPackageService
             SeatPreference = request.SeatPreference,
         };
 
-        var createdFlightBooking = await _flightBookingService.CreateAsync(customerId, flightBooking);
-        if (createdFlightBooking == null)
+        var (createdFlightBooking, flightError) = await _flightBookingService.CreateAsync(customerId, flightBooking);
+        if (flightError != null)
         {
             await transaction.RollbackAsync();
-            return (null, "Traveller not found.");
+            return (null, flightError);
         }
 
         await transaction.CommitAsync();
@@ -112,7 +112,7 @@ public class PackageService : IPackageService
         return (new PackageBookingResult
         {
             RoomBooking = createdRoomBooking!,
-            FlightBooking = createdFlightBooking
+            FlightBooking = createdFlightBooking!
         }, null);
     }
 }

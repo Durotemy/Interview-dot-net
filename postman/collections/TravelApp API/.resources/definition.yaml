@@ -1,0 +1,12 @@
+$kind: collection
+name: TravelApp API
+description: |-
+  Collection for the TravelApp REST API.
+  Covers Travellers, Flight Bookings, Rooms, Room Bookings, Packages, and Package Bookings.
+variables:
+  - key: baseUrl
+    value: 'http://localhost:5154'
+    description: Base URL for the TravelApp API
+  - key: customerId
+    value: '00000000-0000-0000-0000-000000000000'
+    description: Customer GUID used across routes

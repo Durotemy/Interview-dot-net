@@ -1,0 +1,15 @@
+$kind: http-request
+name: Update Flight Preferences
+method: PUT
+url: '{{baseUrl}}/api/v1/customers/{{customerId}}/flight-bookings/{{flightBookingId}}/preferences'
+order: 4000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "meal": 1,
+      "seatPreference": 1
+    }

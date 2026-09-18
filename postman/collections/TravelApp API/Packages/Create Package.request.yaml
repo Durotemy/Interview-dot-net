@@ -1,0 +1,18 @@
+$kind: http-request
+method: POST
+url: "{{baseUrl}}/api/v1/packages"
+order: 3000
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Team bonding",
+      "description": "Two days two days bonding in canada",
+      "roomId": "67d1f0aa-e599-40fc-939c-d5718146e9be",
+      "flightNumber": "AirPeice123",
+      "origin": "",
+      "destination": "Paris",
+      "price": 899.99
+    }

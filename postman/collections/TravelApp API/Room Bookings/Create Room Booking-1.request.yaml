@@ -1,0 +1,17 @@
+$kind: http-request
+name: Create Room Booking
+url: "{{baseUrl}}/api/v1/customers/{{customerId}}/room-bookings"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "roomId": "{{roomId}}",
+      "travellerId": "{{travellerId}}",
+      "checkIn": "2025-06-10",
+      "checkOut": "2025-06-15",
+      "numberOfRooms": 1
+    }
+order: 2904348369617605

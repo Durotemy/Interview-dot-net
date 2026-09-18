@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/customers/825b7779-472b-4ad3-88b5-b09252fef5fc/packages/843118fe-416b-4751-b51a-d856ba64d770/bookings"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "travellerId": "01a0b392-5876-7789-bbdd-19b2e28191f3",
+      "checkIn": "2026-11-10",
+      "checkOut": "2026-11-15",
+      "numberOfRooms": 1,
+      "departureDate": "2026-11-18",
+      "meal": 0,
+      "seatPreference": 0
+    }
+order: 3599697923014856

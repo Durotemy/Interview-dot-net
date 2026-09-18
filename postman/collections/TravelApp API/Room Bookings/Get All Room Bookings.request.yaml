@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get All Room Bookings
+method: GET
+url: '{{baseUrl}}/api/v1/customers/{{customerId}}/room-bookings'
+order: 1000

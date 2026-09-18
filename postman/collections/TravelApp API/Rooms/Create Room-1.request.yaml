@@ -1,0 +1,17 @@
+$kind: http-request
+name: Create Room
+url: "{{baseUrl}}/api/v1/rooms"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "hotelName": "Grand Plaza Hotel",
+      "city": "Paris",
+      "category": 0,
+      "pricePerNight": 150.00,
+      "totalRooms": 20
+    }
+order: 4228121710559414

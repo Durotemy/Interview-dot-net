@@ -9,13 +9,16 @@ public interface IFlightBooking
 {
     Task<List<FlightBooking>> GetAllAsync(Guid customerId);
     Task<FlightBooking?> GetByIdAsync(Guid customerId, Guid id);
-    Task<FlightBooking> CreateAsync(Guid id, FlightBooking flightBooking);
+    Task<(FlightBooking? Booking, string? Error)> CreateAsync(Guid id, FlightBooking flightBooking);
     Task<FlightBooking?> UpdatePreferencesAsync(Guid customerId, Guid id, MealPreference meal, SeatPreference seat);
 
 }
 
 public class FlightBookingService : IFlightBooking
 {
+    const int PlaneCapacity = 99;
+    static readonly Random _random = new();
+
     readonly AppDbContext _db;
 
     public FlightBookingService(AppDbContext db)
@@ -37,26 +40,51 @@ public class FlightBookingService : IFlightBooking
         .Include(t => t.Traveller)
         .FirstOrDefaultAsync(t => t.Id == id && t.Traveller!.CustomerId == customerId);
     }
-    public async Task<FlightBooking> CreateAsync(Guid customerId, FlightBooking flightBooking)
+    public async Task<(FlightBooking? Booking, string? Error)> CreateAsync(Guid customerId, FlightBooking flightBooking)
     {
         var traveller = await _db.Travellers.FirstOrDefaultAsync(t => t.Id == flightBooking.TravellerId && t.CustomerId == customerId);
 
         if (traveller == null)
         {
-            return null;
+            return (null, "Traveller not found.");
         }
 
         flightBooking.Id = Guid.NewGuid();
         flightBooking.MealStatus = RequestStatus.Requested;
-        flightBooking.SeatStatus = RequestStatus.Requested;
-        flightBooking.AssignedSeat = null;
+
+        if (traveller.SecurityConcerns)
+        {
+            // Flagged travellers need manual clearance before a seat is assigned.
+            flightBooking.SeatStatus = RequestStatus.Requested;
+            flightBooking.AssignedSeat = null;
+        }
+        else
+        {
+            var takenSeats = await _db.FlightBookings
+                .Where(f => f.FlightNumber == flightBooking.FlightNumber
+                         && f.DepartureDate == flightBooking.DepartureDate
+                         && f.AssignedSeat != null)
+                .Select(f => f.AssignedSeat!)
+                .ToListAsync();
+
+            var availableSeats = Enumerable.Range(1, PlaneCapacity)
+                .Select(n => n.ToString())
+                .Except(takenSeats)
+                .ToList();
+
+            if (availableSeats.Count == 0)
+            {
+                return (null, "Flight is fully booked.");
+            }
+
+            flightBooking.AssignedSeat = availableSeats[_random.Next(availableSeats.Count)];
+            flightBooking.SeatStatus = RequestStatus.Confirmed;
+        }
 
         _db.FlightBookings.Add(flightBooking);
         await _db.SaveChangesAsync();
 
-        return flightBooking;
-
-
+        return (flightBooking, null);
     }
 
     public async Task<FlightBooking?> UpdatePreferencesAsync(Guid customerId, Guid id, MealPreference meal, SeatPreference seat)

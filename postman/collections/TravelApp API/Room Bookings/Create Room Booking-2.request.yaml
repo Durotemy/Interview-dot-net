@@ -1,0 +1,16 @@
+$kind: http-request
+method: POST
+url: "{{baseUrl}}/api/v1/customers/{{customerId}}/room-bookings"
+order: 2000
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "roomId": "{{roomId}}",
+      "travellerId": "{{travellerId}}",
+      "checkIn": "2025-06-10",
+      "checkOut": "2025-06-15",
+      "numberOfRooms": 1
+    }

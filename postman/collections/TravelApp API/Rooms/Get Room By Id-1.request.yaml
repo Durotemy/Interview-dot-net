@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Room By Id
+url: "{{baseUrl}}/api/v1/rooms/{{roomId}}"
+method: GET
+order: 2328
