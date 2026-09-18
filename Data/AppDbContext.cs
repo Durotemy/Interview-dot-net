@@ -14,5 +14,7 @@ public class AppDbContext : DbContext
 
     public DbSet<Room> Rooms => Set<Room>();
 
+    public DbSet<Package> Packages => Set<Package>();
+
 }
 

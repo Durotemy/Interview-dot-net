@@ -30,6 +30,7 @@ public class TravellerService : ITravellerService
 
     public async Task<Traveller> CreateAsync(Guid customerId, Traveller traveller)
     {
+        traveller.CustomerId = customerId;
         _db.Travellers.Add(traveller);
         await _db.SaveChangesAsync();
         return traveller;

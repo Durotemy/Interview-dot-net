@@ -15,6 +15,10 @@ builder.Services.AddOpenApi();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<ITravellerService, TravellerService>();
+builder.Services.AddScoped<IRoom, RoomService>();
+builder.Services.AddScoped<IRoomBookingService, RoomBookingService>();
+builder.Services.AddScoped<IFlightBooking, FlightBookingService>();
+builder.Services.AddScoped<IPackageService, PackageService>();
 
 
 var app = builder.Build();

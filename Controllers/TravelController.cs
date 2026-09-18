@@ -16,7 +16,7 @@ public class TravellersController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Guid customerId, [FromBody] Traveller traveller)
+    public async Task<IActionResult> Create(Guid customerId, Traveller traveller)
     {
         var created = await _travellerService.CreateAsync(customerId, traveller);
         return Ok(created);
