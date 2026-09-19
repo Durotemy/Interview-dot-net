@@ -1,0 +1,4 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/api/v1/admin/customers/{{customerId}}/flight-bookings/{{flightBookingId}}/confirm'
+order: 5000

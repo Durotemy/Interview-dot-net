@@ -10,5 +10,6 @@ public class Customer
     public required string Nationality { get; set; } = "";
     public required bool Disabilty { get; set; } = false;
     public required string PhoneNumber { get; set; } = "";
-    public bool SecurityConcerns { get; set; } = false;
+    public required bool SecurityConcerns { get; set; } = false;
 }
+

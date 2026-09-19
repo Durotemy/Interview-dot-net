@@ -1,10 +1,10 @@
 {
   "0": "Package",
   "1": "FlightBooking",
-  "2": "AddTravellerIsSelf",
-  "3": ".Confirm",
+  "2": "Migration",
+  "3": "TravelApi.Data",
   "4": "RoomsBooking",
-  "5": "AppDbContext",
+  "5": "Room",
   "6": "TravelApi.Entities",
   "7": "http",
   "8": "learning4.csproj",
@@ -12,12 +12,12 @@
   "10": "learning4.GlobalUsings.g.cs",
   "11": "learning4.MvcApplicationPartsAssemblyInfo.cs",
   "12": ".NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
-  "13": "Customer",
-  "14": "AppDbContextModelSnapshot.cs",
+  "13": "AppDbContext",
+  "14": "AppDbContextModelSnapshot",
   "15": "InitialCreate",
-  "16": "Migration",
+  "16": "AddRooms",
   "17": "AddPackages",
   "18": "AddCustomers",
   "19": "AddCustomerDetails",
-  "20": "learning4.Migrations"
+  "20": "MergeTravellerIntoCustomer"
 }

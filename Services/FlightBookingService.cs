@@ -12,6 +12,9 @@ public interface IFlightBooking
     Task<(FlightBooking? Booking, string? Error)> CreateAsync(Guid id, FlightBooking flightBooking);
     Task<FlightBooking?> UpdatePreferencesAsync(Guid customerId, Guid id, MealPreference meal, SeatPreference seat);
 
+    Task<(FlightBooking? Booking, string? Error)> ConfirmBookingAsync(Guid customerId, Guid id);
+
+
 }
 
 public class FlightBookingService : IFlightBooking
@@ -36,6 +39,7 @@ public class FlightBookingService : IFlightBooking
     public async Task<FlightBooking?> GetByIdAsync(Guid customerId, Guid id)
     {
         return await _db.FlightBookings
+        .Include(f => f.Customer)
         .FirstOrDefaultAsync(f => f.Id == id && f.CustomerId == customerId);
     }
     public async Task<(FlightBooking? Booking, string? Error)> CreateAsync(Guid customerId, FlightBooking flightBooking)
@@ -53,7 +57,6 @@ public class FlightBookingService : IFlightBooking
 
         if (customer.SecurityConcerns)
         {
-            // Flagged customers need manual clearance before a seat is assigned.
             flightBooking.SeatStatus = RequestStatus.Requested;
             flightBooking.AssignedSeat = null;
         }
@@ -104,6 +107,30 @@ public class FlightBookingService : IFlightBooking
 
         await _db.SaveChangesAsync();
         return booking;
+    }
+
+
+    public async Task<(FlightBooking? Booking, string? Error)> ConfirmBookingAsync(Guid customerId, Guid id)
+    {
+        var booking = await _db.FlightBookings
+            .Include(f => f.Customer)
+            .FirstOrDefaultAsync(f => f.Id == id && f.CustomerId == customerId);
+
+        if (booking == null)
+        {
+            return (null, "Booking not found.");
+        }
+
+        if (booking.Customer!.SecurityConcerns)
+        {
+            return (null, "Security check required. This booking cannot be confirmed until security clearance is completed.");
+        }
+
+        booking.SeatStatus = RequestStatus.Confirmed;
+        booking.MealStatus = RequestStatus.Confirmed;
+
+        await _db.SaveChangesAsync();
+        return (booking, null);
     }
 
 

@@ -68,7 +68,7 @@ public class PackageService : IPackageService
     {
         var package = await _db.Packages.FirstOrDefaultAsync(p => p.Id == packageId);
         if (package == null)
-            return (null, "Package not found.");
+            return (null, "Package not foud.");
 
         await using var transaction = await _db.Database.BeginTransactionAsync();
 

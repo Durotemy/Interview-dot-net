@@ -36,4 +36,16 @@ public class CustomerController : ControllerBase
         }
         return Ok(customer);
     }
+
+    [HttpDelete("{id:guid}")]
+    public async Task<IActionResult> DelById(Guid id)
+    {
+        var customer = await _customerService.DeleteByIdAsync(id);
+        if (customer == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(customer);
+    }
 }
