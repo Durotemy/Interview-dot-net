@@ -1,0 +1,9 @@
+$kind: collection
+name: Package Bookings
+description: |-
+  Book a travel package for a customer. This atomically creates both a room booking and a flight booking.
+
+  **Base route:** `api/v1/customers/{customerId}/packages/{packageId}/bookings`
+
+  Requires `customerId`, `packageId`, and `travellerId` to be set in the environment.
+order: 7000

@@ -27,8 +27,7 @@ public class RoomBookingService : IRoomBookingService
     {
         return await _db.RoomsBookings
             .Include(b => b.Room)
-            .Include(b => b.Traveller)
-            .Where(b => b.Traveller!.CustomerId == customerId)
+            .Where(b => b.CustomerId == customerId)
             .OrderByDescending(b => b.CheckIn)
             .ToListAsync();
     }
@@ -44,11 +43,10 @@ public class RoomBookingService : IRoomBookingService
         if (booking.NumberOfRooms < 1)
             return (null, "Book at least one room.");
 
-        // 2. The traveller must exist and belong to this customer
-        var traveller = await _db.Travellers
-            .FirstOrDefaultAsync(t => t.Id == booking.TravellerId && t.CustomerId == customerId);
-        if (traveller == null)
-            return (null, "Traveller not found.");
+        // 2. The customer must exist
+        var customer = await _db.Customers.FirstOrDefaultAsync(c => c.Id == customerId);
+        if (customer == null)
+            return (null, "Customer not found.");
 
         // 3. The room must exist
         var room = await _db.Rooms.FirstOrDefaultAsync(r => r.Id == booking.RoomId);
@@ -69,6 +67,7 @@ public class RoomBookingService : IRoomBookingService
 
         // 5. Save
         booking.Id = Guid.NewGuid();
+        booking.CustomerId = customerId;
         booking.RoomStatus = RequestStatus.Confirmed;
         _db.RoomsBookings.Add(booking);
         await _db.SaveChangesAsync();

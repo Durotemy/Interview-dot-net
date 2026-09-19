@@ -9,13 +9,19 @@ public interface IFlightBooking
 {
     Task<List<FlightBooking>> GetAllAsync(Guid customerId);
     Task<FlightBooking?> GetByIdAsync(Guid customerId, Guid id);
-    Task<FlightBooking> CreateAsync(Guid id, FlightBooking flightBooking);
+    Task<(FlightBooking? Booking, string? Error)> CreateAsync(Guid id, FlightBooking flightBooking);
     Task<FlightBooking?> UpdatePreferencesAsync(Guid customerId, Guid id, MealPreference meal, SeatPreference seat);
+
+    Task<(FlightBooking? Booking, string? Error)> ConfirmBookingAsync(Guid customerId, Guid id);
+
 
 }
 
 public class FlightBookingService : IFlightBooking
 {
+    const int PlaneCapacity = 99;
+    static readonly Random _random = new();
+
     readonly AppDbContext _db;
 
     public FlightBookingService(AppDbContext db)
@@ -26,44 +32,67 @@ public class FlightBookingService : IFlightBooking
 
     {
         return await _db.FlightBookings
-            .Include(f => f.Traveller)
-            .Where(f => f.Traveller!.CustomerId == customerId)
+            .Where(f => f.CustomerId == customerId)
             .ToListAsync();
     }
 
     public async Task<FlightBooking?> GetByIdAsync(Guid customerId, Guid id)
     {
         return await _db.FlightBookings
-        .Include(t => t.Traveller)
-        .FirstOrDefaultAsync(t => t.Id == id && t.Traveller!.CustomerId == customerId);
+        .Include(f => f.Customer)
+        .FirstOrDefaultAsync(f => f.Id == id && f.CustomerId == customerId);
     }
-    public async Task<FlightBooking> CreateAsync(Guid customerId, FlightBooking flightBooking)
+    public async Task<(FlightBooking? Booking, string? Error)> CreateAsync(Guid customerId, FlightBooking flightBooking)
     {
-        var traveller = await _db.Travellers.FirstOrDefaultAsync(t => t.Id == flightBooking.TravellerId && t.CustomerId == customerId);
+        var customer = await _db.Customers.FirstOrDefaultAsync(c => c.Id == customerId);
 
-        if (traveller == null)
+        if (customer == null)
         {
-            return null;
+            return (null, "Customer not found.");
         }
 
         flightBooking.Id = Guid.NewGuid();
+        flightBooking.CustomerId = customerId;
         flightBooking.MealStatus = RequestStatus.Requested;
-        flightBooking.SeatStatus = RequestStatus.Requested;
-        flightBooking.AssignedSeat = null;
+
+        if (customer.SecurityConcerns)
+        {
+            flightBooking.SeatStatus = RequestStatus.Requested;
+            flightBooking.AssignedSeat = null;
+        }
+        else
+        {
+            var takenSeats = await _db.FlightBookings
+                .Where(f => f.FlightNumber == flightBooking.FlightNumber
+                         && f.DepartureDate == flightBooking.DepartureDate
+                         && f.AssignedSeat != null)
+                .Select(f => f.AssignedSeat!)
+                .ToListAsync();
+
+            var availableSeats = Enumerable.Range(1, PlaneCapacity)
+                .Select(n => n.ToString())
+                .Except(takenSeats)
+                .ToList();
+
+            if (availableSeats.Count == 0)
+            {
+                return (null, "Flight is fully booked.");
+            }
+
+            flightBooking.AssignedSeat = availableSeats[_random.Next(availableSeats.Count)];
+            flightBooking.SeatStatus = RequestStatus.Confirmed;
+        }
 
         _db.FlightBookings.Add(flightBooking);
         await _db.SaveChangesAsync();
 
-        return flightBooking;
-
-
+        return (flightBooking, null);
     }
 
     public async Task<FlightBooking?> UpdatePreferencesAsync(Guid customerId, Guid id, MealPreference meal, SeatPreference seat)
     {
         var booking = await _db.FlightBookings
-            .Include(t => t.Traveller)
-            .FirstOrDefaultAsync(t => t.Id == id && t.Traveller!.CustomerId == customerId);
+            .FirstOrDefaultAsync(f => f.Id == id && f.CustomerId == customerId);
 
         if (booking == null)
         {
@@ -78,6 +107,30 @@ public class FlightBookingService : IFlightBooking
 
         await _db.SaveChangesAsync();
         return booking;
+    }
+
+
+    public async Task<(FlightBooking? Booking, string? Error)> ConfirmBookingAsync(Guid customerId, Guid id)
+    {
+        var booking = await _db.FlightBookings
+            .Include(f => f.Customer)
+            .FirstOrDefaultAsync(f => f.Id == id && f.CustomerId == customerId);
+
+        if (booking == null)
+        {
+            return (null, "Booking not found.");
+        }
+
+        if (booking.Customer!.SecurityConcerns)
+        {
+            return (null, "Security check required. This booking cannot be confirmed until security clearance is completed.");
+        }
+
+        booking.SeatStatus = RequestStatus.Confirmed;
+        booking.MealStatus = RequestStatus.Confirmed;
+
+        await _db.SaveChangesAsync();
+        return (booking, null);
     }
 
 

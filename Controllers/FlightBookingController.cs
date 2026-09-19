@@ -37,10 +37,10 @@ public class FlightBookingController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(Guid customerId, [FromBody] FlightBooking flightBooking)
     {
-        var created = await _flightBookingService.CreateAsync(customerId, flightBooking);
-        if (created == null)
+        var (created, error) = await _flightBookingService.CreateAsync(customerId, flightBooking);
+        if (error != null)
         {
-            return NotFound("Traveller not found for this customer.");
+            return BadRequest(error);
         }
         return Ok(created);
     }

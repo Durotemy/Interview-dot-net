@@ -1,0 +1,17 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/api/v1/rooms'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "hotelName": "Grand Regency Hotel",
+      "city": "London",
+      "category": 0,
+      "pricePerNight": 120.00,
+      "totalRooms": 50
+    }

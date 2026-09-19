@@ -7,7 +7,6 @@ namespace TravelApi.Services;
 
 public class PackageBookingRequest
 {
-    public Guid TravellerId { get; set; }
     public DateOnly CheckIn { get; set; }
     public DateOnly CheckOut { get; set; }
     public int NumberOfRooms { get; set; } = 1;
@@ -69,14 +68,13 @@ public class PackageService : IPackageService
     {
         var package = await _db.Packages.FirstOrDefaultAsync(p => p.Id == packageId);
         if (package == null)
-            return (null, "Package not found.");
+            return (null, "Package not foud.");
 
         await using var transaction = await _db.Database.BeginTransactionAsync();
 
         var roomBooking = new RoomsBooking
         {
             RoomId = package.RoomId,
-            TravellerId = request.TravellerId,
             CheckIn = request.CheckIn,
             CheckOut = request.CheckOut,
             NumberOfRooms = request.NumberOfRooms,
@@ -91,7 +89,6 @@ public class PackageService : IPackageService
 
         var flightBooking = new FlightBooking
         {
-            TravellerId = request.TravellerId,
             FlightNumber = package.FlightNumber,
             Origin = package.Origin,
             Destination = package.Destination,
@@ -100,11 +97,11 @@ public class PackageService : IPackageService
             SeatPreference = request.SeatPreference,
         };
 
-        var createdFlightBooking = await _flightBookingService.CreateAsync(customerId, flightBooking);
-        if (createdFlightBooking == null)
+        var (createdFlightBooking, flightError) = await _flightBookingService.CreateAsync(customerId, flightBooking);
+        if (flightError != null)
         {
             await transaction.RollbackAsync();
-            return (null, "Traveller not found.");
+            return (null, flightError);
         }
 
         await transaction.CommitAsync();
@@ -112,7 +109,7 @@ public class PackageService : IPackageService
         return (new PackageBookingResult
         {
             RoomBooking = createdRoomBooking!,
-            FlightBooking = createdFlightBooking
+            FlightBooking = createdFlightBooking!
         }, null);
     }
 }

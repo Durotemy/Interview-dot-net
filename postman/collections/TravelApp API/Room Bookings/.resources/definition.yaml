@@ -1,0 +1,9 @@
+$kind: collection
+name: Room Bookings
+description: |-
+  Create and list room bookings for a customer.
+
+  **Base route:** `api/v1/customers/{customerId}/room-bookings`
+
+  Requires `customerId`, `roomId`, and `travellerId` to be set in the environment.
+order: 5000

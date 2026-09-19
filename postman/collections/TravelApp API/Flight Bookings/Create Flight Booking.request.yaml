@@ -1,0 +1,18 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/api/v1/customers/{{customerId}}/flight-bookings'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "flightNumber": "LH401",
+      "origin": "LOS",
+      "destination": "LHR",
+      "departureDate": "2026-12-01",
+      "meal": 0,
+      "seatPreference": 0
+    }

@@ -1,0 +1,23 @@
+name: TravelApp - Local
+values:
+  - key: baseUrl
+    value: 'http://localhost:5154'
+    enabled: true
+  - key: customerId
+    value: '00000000-0000-0000-0000-000000000000'
+    enabled: true
+  - key: travellerId
+    value: '00000000-0000-0000-0000-000000000000'
+    enabled: true
+  - key: flightBookingId
+    value: '00000000-0000-0000-0000-000000000000'
+    enabled: true
+  - key: roomId
+    value: '00000000-0000-0000-0000-000000000000'
+    enabled: true
+  - key: roomBookingId
+    value: '00000000-0000-0000-0000-000000000000'
+    enabled: true
+  - key: packageId
+    value: '00000000-0000-0000-0000-000000000000'
+    enabled: true

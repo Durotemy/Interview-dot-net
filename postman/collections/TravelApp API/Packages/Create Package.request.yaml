@@ -1,0 +1,19 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/api/v1/packages'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "London Winter Getaway",
+      "description": "A bundled flight and hotel package to London for the winter season.",
+      "roomId": "{{roomId}}",
+      "flightNumber": "LH401",
+      "origin": "LOS",
+      "destination": "LHR",
+      "price": 850.00
+    }

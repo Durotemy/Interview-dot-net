@@ -1,0 +1,17 @@
+{
+  "0": "Package",
+  "1": "FlightBooking",
+  "2": "learning4.Migrations",
+  "3": "Traveller",
+  "4": "RoomsBooking",
+  "5": "AppDbContext",
+  "6": "TravelApi.Entities",
+  "7": "http",
+  "8": "learning4.csproj",
+  "9": "learning4.AssemblyInfo.cs",
+  "10": "learning4.GlobalUsings.g.cs",
+  "11": "learning4.MvcApplicationPartsAssemblyInfo.cs",
+  "12": ".NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+  "13": "Customer",
+  "14": "AppDbContextModelSnapshot.cs"
+}
