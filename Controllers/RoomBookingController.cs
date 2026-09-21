@@ -23,7 +23,7 @@ public class RoomBookingController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Guid customerId, [FromBody] RoomsBooking booking)
+    public async Task<IActionResult> Create(Guid customerId, RoomsBooking booking)
     {
         var (created, error) = await _bookingService.CreateAsync(customerId, booking);
         if (error != null)

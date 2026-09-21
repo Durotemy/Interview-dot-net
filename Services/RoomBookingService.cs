@@ -33,7 +33,6 @@ public class RoomBookingService : IRoomBookingService
     }
     public async Task<(RoomsBooking? Booking, string? Error)> CreateAsync(Guid customerId, RoomsBooking booking)
     {
-        // 1. Basic date and quantity checks
         if (booking.CheckOut <= booking.CheckIn)
             return (null, "Check-out must be after check-in.");
 
@@ -43,17 +42,14 @@ public class RoomBookingService : IRoomBookingService
         if (booking.NumberOfRooms < 1)
             return (null, "Book at least one room.");
 
-        // 2. The customer must exist
         var customer = await _db.Customers.FirstOrDefaultAsync(c => c.Id == customerId);
         if (customer == null)
             return (null, "Customer not found.");
 
-        // 3. The room must exist
         var room = await _db.Rooms.FirstOrDefaultAsync(r => r.Id == booking.RoomId);
         if (room == null)
             return (null, "Room not found.");
 
-        // 4. Enough rooms must be free for those dates
         var alreadyBooked = await _db.RoomsBookings
             .Where(b => b.RoomId == booking.RoomId
                      && b.RoomStatus != RequestStatus.Unavailable
@@ -65,7 +61,6 @@ public class RoomBookingService : IRoomBookingService
         if (booking.NumberOfRooms > roomsLeft)
             return (null, $"Only {Math.Max(roomsLeft, 0)} room(s) left for those dates.");
 
-        // 5. Save
         booking.Id = Guid.NewGuid();
         booking.CustomerId = customerId;
         booking.RoomStatus = RequestStatus.Confirmed;

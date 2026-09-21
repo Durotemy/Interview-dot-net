@@ -15,7 +15,7 @@ public class PackageBookingController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Book(Guid customerId, Guid packageId, [FromBody] PackageBookingRequest request)
+    public async Task<IActionResult> Book(Guid customerId, Guid packageId, PackageBookingRequest request)
     {
         var (result, error) = await _packageService.BookAsync(customerId, packageId, request);
         if (error != null)

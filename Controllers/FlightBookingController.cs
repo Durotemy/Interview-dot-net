@@ -35,7 +35,7 @@ public class FlightBookingController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Guid customerId, [FromBody] FlightBooking flightBooking)
+    public async Task<IActionResult> Create(Guid customerId, FlightBooking flightBooking)
     {
         var (created, error) = await _flightBookingService.CreateAsync(customerId, flightBooking);
         if (error != null)
@@ -46,7 +46,7 @@ public class FlightBookingController : ControllerBase
     }
 
     [HttpPut("{id:guid}/preferences")]
-    public async Task<IActionResult> UpdatePreferences(Guid customerId, Guid id, [FromBody] UpdatePreferencesRequest request)
+    public async Task<IActionResult> UpdatePreferences(Guid customerId, Guid id, UpdatePreferencesRequest request)
     {
         var updated = await _flightBookingService.UpdatePreferencesAsync(customerId, id, request.Meal, request.SeatPreference);
         if (updated == null)

@@ -1,19 +1,18 @@
 $kind: http-request
 method: POST
-url: '{{baseUrl}}/api/v1/packages'
+url: "{{baseUrl}}/api/v1/packages"
 order: 3000
 headers:
-  - key: Content-Type
-    value: application/json
+  Content-Type: application/json
 body:
   type: json
   content: |-
     {
-      "name": "London Winter Getaway",
-      "description": "A bundled flight and hotel package to London for the winter season.",
+      "name": "Team hangout",
+      "description": "Team hangout for the  year after work",
       "roomId": "{{roomId}}",
-      "flightNumber": "LH401",
-      "origin": "LOS",
-      "destination": "LHR",
+      "flightNumber": "Airpiece123",
+      "origin": "Lagos",
+      "destination": "Kaduna",
       "price": 850.00
     }
