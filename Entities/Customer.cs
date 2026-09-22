@@ -11,5 +11,8 @@ public class Customer
     public required bool Disabilty { get; set; } = false;
     public required string PhoneNumber { get; set; } = "";
     public required bool SecurityConcerns { get; set; } = false;
+    public required string Username { get; set; } = "";
+    public required string PasswordHash { get; set; } = "";
+    public string? RefreshTokenHash { get; set; }
 }
 
