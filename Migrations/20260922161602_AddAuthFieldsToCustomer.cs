@@ -18,28 +18,38 @@ namespace learning4.Migrations
                 defaultValue: "");
 
             migrationBuilder.AddColumn<string>(
-                name: "RefreshTokenHash",
-                table: "Customers",
-                type: "text",
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
                 name: "Username",
                 table: "Customers",
                 type: "text",
                 nullable: false,
                 defaultValue: "");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Customers_Email",
+                table: "Customers",
+                column: "Email",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Customers_Username",
+                table: "Customers",
+                column: "Username",
+                unique: true);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "PasswordHash",
+            migrationBuilder.DropIndex(
+                name: "IX_Customers_Email",
+                table: "Customers");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Customers_Username",
                 table: "Customers");
 
             migrationBuilder.DropColumn(
-                name: "RefreshTokenHash",
+                name: "PasswordHash",
                 table: "Customers");
 
             migrationBuilder.DropColumn(

@@ -58,9 +58,6 @@ namespace learning4.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("RefreshTokenHash")
-                        .HasColumnType("text");
-
                     b.Property<bool>("SecurityConcerns")
                         .HasColumnType("boolean");
 
@@ -69,6 +66,12 @@ namespace learning4.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Username")
+                        .IsUnique();
 
                     b.ToTable("Customers");
                 });

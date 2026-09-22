@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TravelApi.Entities;
 using TravelApi.Services;
+using TravelApi.Dto;
 
 namespace TravelApi.Controllers;
 
@@ -16,16 +17,15 @@ public class CustomerController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register(Customer customer)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var (created, error) = await _customerService.RegisterAsync(customer);
+        var (created, error) = await _customerService.RegisterAsync(request);
         if (error != null)
         {
             return BadRequest(error);
         }
         return Ok(created);
     }
-
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById(Guid id)
     {

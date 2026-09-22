@@ -210,3 +210,13 @@
 /Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/graphify-out/cache/ast/v0.9.37/ac48b7f72d9a2039bc934d1cd5f2d08b7afd5cde1e74f1578c4c65066f5f7d2d.json
 /Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/graphify-out/cache/ast/v0.9.37/c7a38a9e238311d6a9010e53c9c7b6b2a89c8310443c41c07884fa94eecc78cf.json
 /Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/graphify-out/cache/ast/v0.9.37/d2126b0449109e6d90632e80027cda460b21254e0d3c4854b17d96da618bcdbb.json
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/BCrypt-Net-Next.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/Users/emmanueldurotimi/Desktop/travelApp/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll

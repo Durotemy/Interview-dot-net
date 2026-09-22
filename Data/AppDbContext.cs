@@ -17,5 +17,11 @@ public class AppDbContext : DbContext
 
     public DbSet<Customer> Customers => Set<Customer>();
 
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        builder.Entity<Customer>().HasIndex(c => c.Username).IsUnique();
+        builder.Entity<Customer>().HasIndex(c => c.Email).IsUnique();
+    }
+
 }
 
