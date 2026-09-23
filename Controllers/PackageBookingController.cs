@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TravelApi.Services;
 
 namespace TravelApi.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/v1/customers/{customerId:guid}/packages/{packageId:guid}/bookings")]
 public class PackageBookingController : ControllerBase
 {
@@ -17,6 +19,11 @@ public class PackageBookingController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Book(Guid customerId, Guid packageId, PackageBookingRequest request)
     {
+        if (!this.IsCurrentCustomer(customerId))
+        {
+            return Forbid();
+        }
+
         var (result, error) = await _packageService.BookAsync(customerId, packageId, request);
         if (error != null)
         {

@@ -2,3 +2,17 @@ $kind: http-request
 method: POST
 url: '{{baseUrl}}/api/v1/admin/customers/{{customerId}}/flight-bookings/{{flightBookingId}}/confirm'
 order: 5000
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status code is 200", function () {
+        pm.response.to.have.status(200);
+      });
+
+      pm.test("Booking is confirmed", function () {
+        const response = pm.response.json();
+        pm.expect(response.message).to.eql("Flight booking confirmed.");
+        pm.expect(response.booking).to.be.an("object");
+        pm.expect(response.assignedSeat).to.exist;
+      });

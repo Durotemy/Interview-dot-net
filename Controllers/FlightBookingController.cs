@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TravelApi.Entities;
 using TravelApi.Enums;
@@ -6,6 +7,7 @@ using TravelApi.Services;
 namespace TravelApi.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/v1/customers/{customerId:guid}/flight-bookings")]
 public class FlightBookingController : ControllerBase
 {
@@ -19,6 +21,11 @@ public class FlightBookingController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll(Guid customerId)
     {
+        if (!this.IsCurrentCustomer(customerId))
+        {
+            return Forbid();
+        }
+
         var bookings = await _flightBookingService.GetAllAsync(customerId);
         return Ok(bookings);
     }
@@ -26,6 +33,11 @@ public class FlightBookingController : ControllerBase
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById(Guid customerId, Guid id)
     {
+        if (!this.IsCurrentCustomer(customerId))
+        {
+            return Forbid();
+        }
+
         var booking = await _flightBookingService.GetByIdAsync(customerId, id);
         if (booking == null)
         {
@@ -37,6 +49,11 @@ public class FlightBookingController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(Guid customerId, FlightBooking flightBooking)
     {
+        if (!this.IsCurrentCustomer(customerId))
+        {
+            return Forbid();
+        }
+
         var (created, error) = await _flightBookingService.CreateAsync(customerId, flightBooking);
         if (error != null)
         {
@@ -48,6 +65,11 @@ public class FlightBookingController : ControllerBase
     [HttpPut("{id:guid}/preferences")]
     public async Task<IActionResult> UpdatePreferences(Guid customerId, Guid id, UpdatePreferencesRequest request)
     {
+        if (!this.IsCurrentCustomer(customerId))
+        {
+            return Forbid();
+        }
+
         var updated = await _flightBookingService.UpdatePreferencesAsync(customerId, id, request.Meal, request.SeatPreference);
         if (updated == null)
         {

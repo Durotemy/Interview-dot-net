@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TravelApi.Entities;
 using TravelApi.Services;
@@ -5,6 +6,7 @@ using TravelApi.Services;
 namespace TravelApi.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/v1/customers/{customerId:guid}/room-bookings")]
 public class RoomBookingController : ControllerBase
 {
@@ -18,6 +20,11 @@ public class RoomBookingController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll(Guid customerId)
     {
+        if (!this.IsCurrentCustomer(customerId))
+        {
+            return Forbid();
+        }
+
         var bookings = await _bookingService.GetAllAsync(customerId);
         return Ok(bookings);
     }
@@ -25,6 +32,11 @@ public class RoomBookingController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(Guid customerId, RoomsBooking booking)
     {
+        if (!this.IsCurrentCustomer(customerId))
+        {
+            return Forbid();
+        }
+
         var (created, error) = await _bookingService.CreateAsync(customerId, booking);
         if (error != null)
         {

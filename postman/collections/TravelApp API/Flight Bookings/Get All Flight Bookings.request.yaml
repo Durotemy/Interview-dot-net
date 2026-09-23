@@ -2,3 +2,5 @@ $kind: http-request
 method: GET
 url: '{{baseUrl}}/api/v1/customers/{{customerId}}/flight-bookings'
 order: 1000
+headers:
+  Authorization: 'Bearer {{accessToken}}'

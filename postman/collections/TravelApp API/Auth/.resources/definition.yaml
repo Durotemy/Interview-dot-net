@@ -1,0 +1,11 @@
+$kind: collection
+name: Auth
+description: |-
+  Log in with a registered customer's username and password to receive a JWT access token.
+
+  **Base route:** `api/v1/auth`
+
+  To create an account first, use **Customers → Register Customer**.
+
+  After logging in, `accessToken` and `customerId` are saved to the environment automatically. Room, flight, and package booking endpoints require this Bearer token and only allow booking for the logged-in customer.
+order: 500

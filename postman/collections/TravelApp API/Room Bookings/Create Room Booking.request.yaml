@@ -3,6 +3,8 @@ method: POST
 url: '{{baseUrl}}/api/v1/customers/{{customerId}}/room-bookings'
 order: 2000
 headers:
+  - key: Authorization
+    value: 'Bearer {{accessToken}}'
   - key: Content-Type
     value: application/json
 body:

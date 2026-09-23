@@ -6,4 +6,8 @@ description: |-
   **Base route:** `api/v1/customers`
 
   After registering a customer, copy the returned `id` into the `customerId` environment variable.
+
+  **Password rule:** at least 8 characters, including a number and a special character.
+
+  To log in with a registered customer, use **Auth → Login**.
 order: 1000

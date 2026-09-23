@@ -6,4 +6,6 @@ description: |-
   **Base route:** `api/v1/customers/{customerId}/packages/{packageId}/bookings`
 
   Requires `customerId`, `packageId`, and `travellerId` to be set in the environment.
+
+  **Auth:** Requires a Bearer token. Run **Auth → Login** first; it sets `accessToken` and `customerId` automatically. Using another customer's `customerId` returns 403.
 order: 7000

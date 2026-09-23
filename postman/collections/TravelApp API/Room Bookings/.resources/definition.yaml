@@ -6,4 +6,6 @@ description: |-
   **Base route:** `api/v1/customers/{customerId}/room-bookings`
 
   Requires `customerId`, `roomId`, and `travellerId` to be set in the environment.
+
+  **Auth:** Requires a Bearer token. Run **Auth → Login** first; it sets `accessToken` and `customerId` automatically. Using another customer's `customerId` returns 403.
 order: 5000

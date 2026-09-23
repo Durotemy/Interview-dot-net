@@ -11,9 +11,7 @@ body:
       "firstName": "Osana",
       "lastName": "Osana",
       "email": "osana@gmail.com",
-      "dateofbirth":"1995-05-17",
-      "nationality":"Nigeria",
-      "disabilty":true,
       "phoneNumber": "09033445564",
-      "securityConcerns":false
+      "username": "osana",
+      "password": "P@ssword1"
     }

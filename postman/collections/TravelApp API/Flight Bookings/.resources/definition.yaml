@@ -7,6 +7,8 @@ description: |-
 
   Requires `customerId` and `travellerId` to be set in the environment.
 
+  **Auth:** Requires a Bearer token. Run **Auth → Login** first; it sets `accessToken` and `customerId` automatically. Using another customer's `customerId` returns 403.
+
   **MealPreference values:** 0 = Standard, 1 = LightFood, 2 = Cereal, 3 = Protein
 
   **SeatPreference values:** 0 = NoPreference, 1 = WindowSeat

@@ -3,8 +3,10 @@ name: TravelApp API
 description: |-
   REST API for the TravelApp platform — a travel booking system built with ASP.NET Core (.NET 10) and PostgreSQL.
 
-  Covers Customers, Travellers, Flight Bookings, Rooms, Room Bookings, Packages, and Package Bookings.
+  Covers Auth, Customers, Travellers, Flight Bookings, Rooms, Room Bookings, Packages, and Package Bookings.
 
   **Base URL:** {{baseUrl}}
 
   Make sure the **TravelApp - Local** environment is selected before sending requests.
+
+  **Getting started:** Register a customer (**Customers → Register Customer**), then run **Auth → Login**. Room, flight, and package bookings require the Bearer token that Login saves to `accessToken`.

@@ -4,6 +4,114 @@
   "graph": {},
   "nodes": [
     {
+      "label": "AuthController.cs",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_authcontroller",
+      "community": 6,
+      "community_name": "TravelApi.Data",
+      "norm_label": "authcontroller.cs"
+    },
+    {
+      "label": "TravelApi.Controllers",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L5",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TravelApi.Controllers"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:d446300bce67ba14",
+      "community": 6,
+      "community_name": "TravelApi.Data",
+      "norm_label": "travelapi.controllers"
+    },
+    {
+      "label": "AuthController",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L7",
+      "metadata": {
+        "namespace": "TravelApi.Controllers",
+        "scope_chain": [
+          "s80"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "controllers_authcontroller_travelapi_controllers_authcontroller",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "authcontroller"
+    },
+    {
+      "label": "ControllerBase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllerbase",
+      "community": 0,
+      "community_name": "Package",
+      "norm_label": "controllerbase"
+    },
+    {
+      "label": ".Login()",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L18",
+      "metadata": {
+        "namespace": "TravelApi.Controllers",
+        "scope_chain": [
+          "s80"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "controllers_authcontroller_travelapi_controllers_authcontroller_login",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": ".login()"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_task",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "task"
+    },
+    {
+      "label": "IActionResult",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_iactionresult",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "iactionresult"
+    },
+    {
+      "label": "HttpPost",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_httppost",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "httppost"
+    },
+    {
       "label": "ConfirmBookingController.cs",
       "file_type": "code",
       "source_file": "Controllers/ConfirmBookingController.cs",
@@ -13,22 +121,6 @@
       "community": 3,
       "community_name": ".Confirm",
       "norm_label": "confirmbookingcontroller.cs"
-    },
-    {
-      "label": "TravelApi.Controllers",
-      "file_type": "code",
-      "source_file": "Controllers/ConfirmBookingController.cs",
-      "source_location": "L4",
-      "type": "namespace",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "TravelApi.Controllers"
-      },
-      "_origin": "ast",
-      "id": "csharp_namespace:d446300bce67ba14",
-      "community": 6,
-      "community_name": "TravelApi.Entities",
-      "norm_label": "travelapi.controllers"
     },
     {
       "label": "ConfirmBookingController",
@@ -48,17 +140,6 @@
       "community": 3,
       "community_name": ".Confirm",
       "norm_label": "confirmbookingcontroller"
-    },
-    {
-      "label": "ControllerBase",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "controllerbase",
-      "community": 4,
-      "community_name": "RoomsBooking",
-      "norm_label": "controllerbase"
     },
     {
       "label": ".Confirm()",
@@ -142,6 +223,76 @@
       "norm_label": "confirmbookingrequest"
     },
     {
+      "label": "ControllerExtensions.cs",
+      "file_type": "code",
+      "source_file": "Controllers/ControllerExtensions.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_controllerextensions",
+      "community": 23,
+      "community_name": ".IsCurrentCustomer",
+      "norm_label": "controllerextensions.cs"
+    },
+    {
+      "label": "ControllerExtensions",
+      "file_type": "code",
+      "source_file": "Controllers/ControllerExtensions.cs",
+      "source_location": "L7",
+      "metadata": {
+        "namespace": "TravelApi.Controllers",
+        "scope_chain": [
+          "s102"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "controllers_controllerextensions_travelapi_controllers_controllerextensions",
+      "community": 23,
+      "community_name": ".IsCurrentCustomer",
+      "norm_label": "controllerextensions"
+    },
+    {
+      "label": ".IsCurrentCustomer()",
+      "file_type": "code",
+      "source_file": "Controllers/ControllerExtensions.cs",
+      "source_location": "L9",
+      "metadata": {
+        "namespace": "TravelApi.Controllers",
+        "scope_chain": [
+          "s102"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "controllers_controllerextensions_travelapi_controllers_controllerextensions_iscurrentcustomer",
+      "community": 23,
+      "community_name": ".IsCurrentCustomer",
+      "norm_label": ".iscurrentcustomer()"
+    },
+    {
+      "label": "ControllerBase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_controllerextensions_cs_controllerbase",
+      "community": 23,
+      "community_name": ".IsCurrentCustomer",
+      "norm_label": "controllerbase"
+    },
+    {
+      "label": "Guid",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_controllerextensions_cs_guid",
+      "community": 23,
+      "community_name": ".IsCurrentCustomer",
+      "norm_label": "guid"
+    },
+    {
       "label": "CustomerController.cs",
       "file_type": "code",
       "source_file": "Controllers/CustomerController.cs",
@@ -149,18 +300,18 @@
       "_origin": "ast",
       "id": "controllers_customercontroller",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "customercontroller.cs"
     },
     {
       "label": "CustomerController",
       "file_type": "code",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L7",
+      "source_location": "L8",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s85"
+          "s106"
         ]
       },
       "_callable": true,
@@ -168,25 +319,25 @@
       "_origin": "ast",
       "id": "controllers_customercontroller_travelapi_controllers_customercontroller",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "customercontroller"
     },
     {
       "label": ".Register()",
       "file_type": "code",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L18",
+      "source_location": "L19",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s85"
+          "s106"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "controllers_customercontroller_travelapi_controllers_customercontroller_register",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".register()"
     },
     {
@@ -197,7 +348,7 @@
       "_origin": "ast",
       "id": "controllers_customercontroller_cs_task",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "task"
     },
     {
@@ -208,7 +359,7 @@
       "_origin": "ast",
       "id": "controllers_customercontroller_cs_iactionresult",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "iactionresult"
     },
     {
@@ -219,7 +370,7 @@
       "_origin": "ast",
       "id": "controllers_customercontroller_cs_httppost",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "httppost"
     },
     {
@@ -230,14 +381,14 @@
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s85"
+          "s106"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "controllers_customercontroller_travelapi_controllers_customercontroller_getbyid",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".getbyid()"
     },
     {
@@ -248,7 +399,7 @@
       "_origin": "ast",
       "id": "controllers_customercontroller_cs_guid",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "guid"
     },
     {
@@ -259,7 +410,7 @@
       "_origin": "ast",
       "id": "controllers_customercontroller_cs_httpget",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "httpget"
     },
     {
@@ -270,14 +421,14 @@
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s85"
+          "s106"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "controllers_customercontroller_travelapi_controllers_customercontroller_delbyid",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".delbyid()"
     },
     {
@@ -288,7 +439,7 @@
       "_origin": "ast",
       "id": "httpdelete",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "httpdelete"
     },
     {
@@ -299,18 +450,18 @@
       "_origin": "ast",
       "id": "controllers_flightbookingcontroller",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "flightbookingcontroller.cs"
     },
     {
       "label": "FlightBookingController",
       "file_type": "code",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L8",
+      "source_location": "L9",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s108"
+          "s150"
         ]
       },
       "_callable": true,
@@ -325,11 +476,11 @@
       "label": ".GetAll()",
       "file_type": "code",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L19",
+      "source_location": "L21",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s108"
+          "s150"
         ]
       },
       "_callable": true,
@@ -387,11 +538,11 @@
       "label": ".GetById()",
       "file_type": "code",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L26",
+      "source_location": "L33",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s108"
+          "s150"
         ]
       },
       "_callable": true,
@@ -405,11 +556,11 @@
       "label": ".Create()",
       "file_type": "code",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L37",
+      "source_location": "L49",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s108"
+          "s150"
         ]
       },
       "_callable": true,
@@ -434,11 +585,11 @@
       "label": ".UpdatePreferences()",
       "file_type": "code",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L48",
+      "source_location": "L65",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s108"
+          "s150"
         ]
       },
       "_callable": true,
@@ -463,11 +614,11 @@
       "label": "UpdatePreferencesRequest",
       "file_type": "code",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L60",
+      "source_location": "L82",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s108"
+          "s150"
         ]
       },
       "_callable": true,
@@ -486,18 +637,18 @@
       "_origin": "ast",
       "id": "controllers_packagebookingcontroller",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "packagebookingcontroller.cs"
     },
     {
       "label": "PackageBookingController",
       "file_type": "code",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L6",
+      "source_location": "L7",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s59"
+          "s101"
         ]
       },
       "_callable": true,
@@ -512,11 +663,11 @@
       "label": ".Book()",
       "file_type": "code",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L17",
+      "source_location": "L19",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s59"
+          "s101"
         ]
       },
       "_callable": true,
@@ -578,7 +729,7 @@
       "_origin": "ast",
       "id": "controllers_packagecontroller",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "packagecontroller.cs"
     },
     {
@@ -717,18 +868,18 @@
       "_origin": "ast",
       "id": "controllers_roombookingcontroller",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "roombookingcontroller.cs"
     },
     {
       "label": "RoomBookingController",
       "file_type": "code",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L7",
+      "source_location": "L8",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s85"
+          "s127"
         ]
       },
       "_callable": true,
@@ -743,11 +894,11 @@
       "label": ".GetAll()",
       "file_type": "code",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L18",
+      "source_location": "L20",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s85"
+          "s127"
         ]
       },
       "_callable": true,
@@ -805,11 +956,11 @@
       "label": ".Create()",
       "file_type": "code",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L25",
+      "source_location": "L32",
       "metadata": {
         "namespace": "TravelApi.Controllers",
         "scope_chain": [
-          "s85"
+          "s127"
         ]
       },
       "_callable": true,
@@ -838,7 +989,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "roomcontroller.cs"
     },
     {
@@ -857,7 +1008,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_travelapi_controllers_roomcontroller",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "roomcontroller"
     },
     {
@@ -875,7 +1026,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_travelapi_controllers_roomcontroller_getall",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getall()"
     },
     {
@@ -886,7 +1037,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_cs_task",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "task"
     },
     {
@@ -897,7 +1048,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_cs_iactionresult",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "iactionresult"
     },
     {
@@ -908,7 +1059,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_cs_httpget",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "httpget"
     },
     {
@@ -926,7 +1077,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_travelapi_controllers_roomcontroller_getbyid",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getbyid()"
     },
     {
@@ -937,7 +1088,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_cs_guid",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "guid"
     },
     {
@@ -955,7 +1106,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_travelapi_controllers_roomcontroller_create",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".create()"
     },
     {
@@ -966,7 +1117,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_cs_httppost",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "httppost"
     },
     {
@@ -984,7 +1135,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_travelapi_controllers_roomcontroller_getavailability",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getavailability()"
     },
     {
@@ -995,7 +1146,7 @@
       "_origin": "ast",
       "id": "controllers_roomcontroller_cs_dateonly",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "dateonly"
     },
     {
@@ -1006,7 +1157,7 @@
       "_origin": "ast",
       "id": "data_appdbcontext",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "appdbcontext.cs"
     },
     {
@@ -1022,7 +1173,7 @@
       "_origin": "ast",
       "id": "csharp_namespace:b01833f106e2e1a9",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "travelapi.data"
     },
     {
@@ -1040,7 +1191,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "data_appdbcontext_travelapi_data_appdbcontext",
-      "community": 5,
+      "community": 13,
       "community_name": "AppDbContext",
       "norm_label": "appdbcontext"
     },
@@ -1051,7 +1202,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "dbcontext",
-      "community": 5,
+      "community": 13,
       "community_name": "AppDbContext",
       "norm_label": "dbcontext"
     },
@@ -1062,9 +1213,122 @@
       "source_location": "",
       "_origin": "ast",
       "id": "dbset",
-      "community": 5,
+      "community": 13,
       "community_name": "AppDbContext",
       "norm_label": "dbset"
+    },
+    {
+      "label": ".OnModelCreating()",
+      "file_type": "code",
+      "source_file": "Data/AppDbContext.cs",
+      "source_location": "L20",
+      "metadata": {
+        "namespace": "TravelApi.Data",
+        "scope_chain": [
+          "s90"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "data_appdbcontext_travelapi_data_appdbcontext_onmodelcreating",
+      "community": 13,
+      "community_name": "AppDbContext",
+      "norm_label": ".onmodelcreating()"
+    },
+    {
+      "label": "ModelBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "data_appdbcontext_cs_modelbuilder",
+      "community": 13,
+      "community_name": "AppDbContext",
+      "norm_label": "modelbuilder"
+    },
+    {
+      "label": "Auth.cs",
+      "file_type": "code",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dto_auth",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "auth.cs"
+    },
+    {
+      "label": "TravelApi.Dto",
+      "file_type": "code",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L1",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TravelApi.Dto"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:349a21b0b82d5523",
+      "community": 6,
+      "community_name": "TravelApi.Data",
+      "norm_label": "travelapi.dto"
+    },
+    {
+      "label": "RegisterRequest",
+      "file_type": "code",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L3",
+      "metadata": {
+        "namespace": "TravelApi.Dto",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "dto_auth_travelapi_dto_registerrequest",
+      "community": 13,
+      "community_name": "AppDbContext",
+      "norm_label": "registerrequest"
+    },
+    {
+      "label": "LoginRequest",
+      "file_type": "code",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "TravelApi.Dto",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "dto_auth_travelapi_dto_loginrequest",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "loginrequest"
+    },
+    {
+      "label": "AuthResponse",
+      "file_type": "code",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L7",
+      "metadata": {
+        "namespace": "TravelApi.Dto",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "dto_auth_travelapi_dto_authresponse",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "authresponse"
     },
     {
       "label": "Customer.cs",
@@ -1074,7 +1338,7 @@
       "_origin": "ast",
       "id": "entities_customer",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "customer.cs"
     },
     {
@@ -1090,7 +1354,7 @@
       "_origin": "ast",
       "id": "csharp_namespace:57aeec9be921b1cf",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "travelapi.entities"
     },
     {
@@ -1109,7 +1373,7 @@
       "_origin": "ast",
       "id": "entities_customer_travelapi_entities_customer",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "customer"
     },
     {
@@ -1120,7 +1384,7 @@
       "_origin": "ast",
       "id": "entities_customer_cs_guid",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "guid"
     },
     {
@@ -1131,7 +1395,7 @@
       "_origin": "ast",
       "id": "entities_customer_cs_dateonly",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "dateonly"
     },
     {
@@ -1142,7 +1406,7 @@
       "_origin": "ast",
       "id": "entities_flightbooking",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "flightbooking.cs"
     },
     {
@@ -1234,8 +1498,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "entities_room",
-      "community": 5,
-      "community_name": "AppDbContext",
+      "community": 6,
+      "community_name": "TravelApi.Data",
       "norm_label": "room.cs"
     },
     {
@@ -1254,7 +1518,7 @@
       "_origin": "ast",
       "id": "entities_room_travelapi_entities_room",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "room"
     },
     {
@@ -1265,7 +1529,7 @@
       "_origin": "ast",
       "id": "entities_room_cs_guid",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "guid"
     },
     {
@@ -1276,7 +1540,7 @@
       "_origin": "ast",
       "id": "entities_roomsbooking",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "roomsbooking.cs"
     },
     {
@@ -1328,7 +1592,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate_designer",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": "20260917010720_initialcreate.designer.cs"
     },
     {
@@ -1343,7 +1607,7 @@
       },
       "_origin": "ast",
       "id": "csharp_namespace:f8717fe99859869d",
-      "community": 20,
+      "community": 16,
       "community_name": "learning4.Migrations",
       "norm_label": "learning4.migrations"
     },
@@ -1364,7 +1628,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate_designer_learning4_migrations_initialcreate",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": "initialcreate"
     },
     {
@@ -1382,7 +1646,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate_designer_learning4_migrations_initialcreate_buildtargetmodel",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": ".buildtargetmodel()"
     },
     {
@@ -1393,7 +1657,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate_designer_cs_modelbuilder",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": "modelbuilder"
     },
     {
@@ -1404,7 +1668,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": "20260917010720_initialcreate.cs"
     },
     {
@@ -1414,7 +1678,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "migration",
-      "community": 16,
+      "community": 15,
       "community_name": "Migration",
       "norm_label": "migration"
     },
@@ -1433,7 +1697,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate_learning4_migrations_initialcreate_up",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": ".up()"
     },
     {
@@ -1444,7 +1708,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate_cs_migrationbuilder",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": "migrationbuilder"
     },
     {
@@ -1462,7 +1726,7 @@
       "_origin": "ast",
       "id": "migrations_20260917010720_initialcreate_learning4_migrations_initialcreate_down",
       "community": 15,
-      "community_name": "InitialCreate",
+      "community_name": "Migration",
       "norm_label": ".down()"
     },
     {
@@ -1473,7 +1737,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms_designer",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": "20260917121803_addrooms.designer.cs"
     },
     {
@@ -1493,7 +1757,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms_designer_learning4_migrations_addrooms",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": "addrooms"
     },
     {
@@ -1511,7 +1775,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms_designer_learning4_migrations_addrooms_buildtargetmodel",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": ".buildtargetmodel()"
     },
     {
@@ -1522,7 +1786,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms_designer_cs_modelbuilder",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": "modelbuilder"
     },
     {
@@ -1533,7 +1797,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": "20260917121803_addrooms.cs"
     },
     {
@@ -1551,7 +1815,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms_learning4_migrations_addrooms_up",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": ".up()"
     },
     {
@@ -1562,7 +1826,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms_cs_migrationbuilder",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": "migrationbuilder"
     },
     {
@@ -1580,7 +1844,7 @@
       "_origin": "ast",
       "id": "migrations_20260917121803_addrooms_learning4_migrations_addrooms_down",
       "community": 16,
-      "community_name": "Migration",
+      "community_name": "learning4.Migrations",
       "norm_label": ".down()"
     },
     {
@@ -2063,7 +2327,7 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer_designer",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
       "norm_label": "20260918133142_mergetravellerintocustomer.designer.cs"
     },
     {
@@ -2083,7 +2347,7 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer_designer_learning4_migrations_mergetravellerintocustomer",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
       "norm_label": "mergetravellerintocustomer"
     },
     {
@@ -2101,7 +2365,7 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer_designer_learning4_migrations_mergetravellerintocustomer_buildtargetmodel",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
       "norm_label": ".buildtargetmodel()"
     },
     {
@@ -2112,7 +2376,7 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer_designer_cs_modelbuilder",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
       "norm_label": "modelbuilder"
     },
     {
@@ -2123,7 +2387,7 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
       "norm_label": "20260918133142_mergetravellerintocustomer.cs"
     },
     {
@@ -2141,7 +2405,7 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer_learning4_migrations_mergetravellerintocustomer_up",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
       "norm_label": ".up()"
     },
     {
@@ -2152,7 +2416,7 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer_cs_migrationbuilder",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
       "norm_label": "migrationbuilder"
     },
     {
@@ -2170,7 +2434,125 @@
       "_origin": "ast",
       "id": "migrations_20260918133142_mergetravellerintocustomer_learning4_migrations_mergetravellerintocustomer_down",
       "community": 20,
-      "community_name": "learning4.Migrations",
+      "community_name": "MergeTravellerIntoCustomer",
+      "norm_label": ".down()"
+    },
+    {
+      "label": "20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "file_type": "code",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer_designer",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
+      "norm_label": "20260922161602_addauthfieldstocustomer.designer.cs"
+    },
+    {
+      "label": "AddAuthFieldsToCustomer",
+      "file_type": "code",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L14",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "learning4.Migrations",
+        "scope_chain": [
+          "s333"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
+      "norm_label": "addauthfieldstocustomer"
+    },
+    {
+      "label": ".BuildTargetModel()",
+      "file_type": "code",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L19",
+      "metadata": {
+        "namespace": "learning4.Migrations",
+        "scope_chain": [
+          "s333"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer_buildtargetmodel",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
+      "norm_label": ".buildtargetmodel()"
+    },
+    {
+      "label": "ModelBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer_designer_cs_modelbuilder",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
+      "norm_label": "modelbuilder"
+    },
+    {
+      "label": "20260922161602_AddAuthFieldsToCustomer.cs",
+      "file_type": "code",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
+      "norm_label": "20260922161602_addauthfieldstocustomer.cs"
+    },
+    {
+      "label": ".Up()",
+      "file_type": "code",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L11",
+      "metadata": {
+        "namespace": "learning4.Migrations",
+        "scope_chain": [
+          "s71"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer_learning4_migrations_addauthfieldstocustomer_up",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
+      "norm_label": ".up()"
+    },
+    {
+      "label": "MigrationBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer_cs_migrationbuilder",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
+      "norm_label": "migrationbuilder"
+    },
+    {
+      "label": ".Down()",
+      "file_type": "code",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L41",
+      "metadata": {
+        "namespace": "learning4.Migrations",
+        "scope_chain": [
+          "s71"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "migrations_20260922161602_addauthfieldstocustomer_learning4_migrations_addauthfieldstocustomer_down",
+      "community": 22,
+      "community_name": "AddAuthFieldsToCustomer",
       "norm_label": ".down()"
     },
     {
@@ -2252,20 +2634,20 @@
       "_origin": "ast",
       "id": "program",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "program.cs"
     },
     {
       "label": "WeatherForecast",
       "file_type": "code",
       "source_file": "Program.cs",
-      "source_location": "L52",
+      "source_location": "L76",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "id": "program_weatherforecast",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "weatherforecast"
     },
     {
@@ -2445,21 +2827,21 @@
       "norm_label": "environmentvariables"
     },
     {
-      "label": "CustomerService.cs",
+      "label": "AuthService.cs",
       "file_type": "code",
-      "source_file": "Services/CustomerService.cs",
+      "source_file": "Services/AuthService.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "services_customerservice",
+      "id": "services_authservice",
       "community": 6,
-      "community_name": "TravelApi.Entities",
-      "norm_label": "customerservice.cs"
+      "community_name": "TravelApi.Data",
+      "norm_label": "authservice.cs"
     },
     {
       "label": "TravelApi.Services",
       "file_type": "code",
-      "source_file": "Services/CustomerService.cs",
-      "source_location": "L6",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L10",
       "type": "namespace",
       "metadata": {
         "kind": "csharp_namespace",
@@ -2468,18 +2850,147 @@
       "_origin": "ast",
       "id": "csharp_namespace:d52a47b2ad10d9a4",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "travelapi.services"
+    },
+    {
+      "label": "IAuthService",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L12",
+      "metadata": {
+        "namespace": "TravelApi.Services",
+        "scope_chain": [
+          "s208"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_authservice_travelapi_services_iauthservice",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "iauthservice"
+    },
+    {
+      "label": ".LoginAsync()",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L14",
+      "metadata": {
+        "namespace": "TravelApi.Services",
+        "scope_chain": [
+          "s208"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_authservice_travelapi_services_iauthservice_loginasync",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": ".loginasync()"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_authservice_cs_task",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "task"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_authservice_cs_result",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "result"
+    },
+    {
+      "label": "Error",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_authservice_cs_error",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "error"
+    },
+    {
+      "label": "AuthService",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L17",
+      "metadata": {
+        "namespace": "TravelApi.Services",
+        "scope_chain": [
+          "s208"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_authservice_travelapi_services_authservice",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "authservice"
+    },
+    {
+      "label": "IConfiguration",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "iconfiguration",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": "iconfiguration"
+    },
+    {
+      "label": ".LoginAsync()",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L28",
+      "metadata": {
+        "namespace": "TravelApi.Services",
+        "scope_chain": [
+          "s208"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_authservice_travelapi_services_authservice_loginasync",
+      "community": 21,
+      "community_name": ".LoginAsync",
+      "norm_label": ".loginasync()"
+    },
+    {
+      "label": "CustomerService.cs",
+      "file_type": "code",
+      "source_file": "Services/CustomerService.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_customerservice",
+      "community": 6,
+      "community_name": "TravelApi.Data",
+      "norm_label": "customerservice.cs"
     },
     {
       "label": "ICustomerService",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L8",
+      "source_location": "L9",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
@@ -2487,25 +2998,25 @@
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_icustomerservice",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "icustomerservice"
     },
     {
       "label": ".RegisterAsync()",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L10",
+      "source_location": "L11",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_icustomerservice_registerasync",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".registerasync()"
     },
     {
@@ -2516,7 +3027,7 @@
       "_origin": "ast",
       "id": "services_customerservice_cs_task",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "task"
     },
     {
@@ -2527,25 +3038,25 @@
       "_origin": "ast",
       "id": "services_customerservice_cs_error",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "error"
     },
     {
       "label": ".GetByIdAsync()",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L11",
+      "source_location": "L12",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_icustomerservice_getbyidasync",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".getbyidasync()"
     },
     {
@@ -2556,36 +3067,36 @@
       "_origin": "ast",
       "id": "services_customerservice_cs_guid",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "guid"
     },
     {
       "label": ".DeleteByIdAsync()",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L13",
+      "source_location": "L14",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_icustomerservice_deletebyidasync",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".deletebyidasync()"
     },
     {
       "label": "CustomerService",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L16",
+      "source_location": "L17",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
@@ -2593,61 +3104,72 @@
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_customerservice",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": "customerservice"
+    },
+    {
+      "label": "Regex",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "regex",
+      "community": 13,
+      "community_name": "AppDbContext",
+      "norm_label": "regex"
     },
     {
       "label": ".RegisterAsync()",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L29",
+      "source_location": "L32",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_customerservice_registerasync",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".registerasync()"
     },
     {
       "label": ".GetByIdAsync()",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L45",
+      "source_location": "L62",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_customerservice_getbyidasync",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".getbyidasync()"
     },
     {
       "label": ".DeleteByIdAsync()",
       "file_type": "code",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L50",
+      "source_location": "L67",
       "metadata": {
         "namespace": "TravelApi.Services",
         "scope_chain": [
-          "s131"
+          "s145"
         ]
       },
       "_callable": true,
       "_origin": "ast",
       "id": "services_customerservice_travelapi_services_customerservice_deletebyidasync",
       "community": 13,
-      "community_name": "Customer",
+      "community_name": "AppDbContext",
       "norm_label": ".deletebyidasync()"
     },
     {
@@ -2658,7 +3180,7 @@
       "_origin": "ast",
       "id": "services_flightbookingservice",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "flightbookingservice.cs"
     },
     {
@@ -2964,7 +3486,7 @@
       "_origin": "ast",
       "id": "services_packageservice",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "packageservice.cs"
     },
     {
@@ -3146,7 +3668,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "result",
+      "id": "services_packageservice_cs_result",
       "community": 0,
       "community_name": "Package",
       "norm_label": "result"
@@ -3261,7 +3783,7 @@
       "_origin": "ast",
       "id": "services_roombookingservice",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "roombookingservice.cs"
     },
     {
@@ -3437,7 +3959,7 @@
       "_origin": "ast",
       "id": "services_roomservice",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "roomservice.cs"
     },
     {
@@ -3456,7 +3978,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_iroom",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "iroom"
     },
     {
@@ -3474,7 +3996,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_iroom_getallasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getallasync()"
     },
     {
@@ -3485,7 +4007,7 @@
       "_origin": "ast",
       "id": "services_roomservice_cs_task",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "task"
     },
     {
@@ -3496,7 +4018,7 @@
       "_origin": "ast",
       "id": "services_roomservice_cs_list",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "list"
     },
     {
@@ -3514,7 +4036,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_iroom_getbyidasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getbyidasync()"
     },
     {
@@ -3525,7 +4047,7 @@
       "_origin": "ast",
       "id": "services_roomservice_cs_guid",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "guid"
     },
     {
@@ -3543,7 +4065,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_iroom_createasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".createasync()"
     },
     {
@@ -3561,7 +4083,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_iroom_getavailabilityasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getavailabilityasync()"
     },
     {
@@ -3572,7 +4094,7 @@
       "_origin": "ast",
       "id": "services_roomservice_cs_dateonly",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "dateonly"
     },
     {
@@ -3583,7 +4105,7 @@
       "_origin": "ast",
       "id": "roomsleft",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "roomsleft"
     },
     {
@@ -3594,7 +4116,7 @@
       "_origin": "ast",
       "id": "services_roomservice_cs_error",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "error"
     },
     {
@@ -3613,7 +4135,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_roomservice",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "roomservice"
     },
     {
@@ -3631,7 +4153,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_roomservice_getallasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getallasync()"
     },
     {
@@ -3649,7 +4171,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_roomservice_getbyidasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getbyidasync()"
     },
     {
@@ -3667,7 +4189,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_roomservice_createasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".createasync()"
     },
     {
@@ -3685,7 +4207,7 @@
       "_origin": "ast",
       "id": "services_roomservice_travelapi_services_roomservice_getavailabilityasync",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": ".getavailabilityasync()"
     },
     {
@@ -3695,8 +4217,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "enum_mealpreference",
-      "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community": 1,
+      "community_name": "FlightBooking",
       "norm_label": "mealpreference.cs"
     },
     {
@@ -3712,7 +4234,7 @@
       "_origin": "ast",
       "id": "csharp_namespace:a1976157b243b0d3",
       "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community_name": "TravelApi.Data",
       "norm_label": "travelapi.enums"
     },
     {
@@ -3772,7 +4294,7 @@
       "_origin": "ast",
       "id": "enum_roomcategory",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "roomcategory.cs"
     },
     {
@@ -3791,7 +4313,7 @@
       "_origin": "ast",
       "id": "enum_roomcategory_travelapi_enums_roomcategory",
       "community": 5,
-      "community_name": "AppDbContext",
+      "community_name": "Room",
       "norm_label": "roomcategory"
     },
     {
@@ -3801,8 +4323,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "enum_seatpreference",
-      "community": 6,
-      "community_name": "TravelApi.Entities",
+      "community": 1,
+      "community_name": "FlightBooking",
       "norm_label": "seatpreference.cs"
     },
     {
@@ -3847,6 +4369,28 @@
       "norm_label": "net10.0"
     },
     {
+      "label": "BCrypt.Net-Next (4.2.0)",
+      "file_type": "code",
+      "source_file": "learning4.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_bcrypt_net_next",
+      "community": 8,
+      "community_name": "learning4.csproj",
+      "norm_label": "bcrypt.net-next (4.2.0)"
+    },
+    {
+      "label": "Microsoft.AspNetCore.Authentication.JwtBearer (10.0.10)",
+      "file_type": "code",
+      "source_file": "learning4.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_microsoft_aspnetcore_authentication_jwtbearer",
+      "community": 8,
+      "community_name": "learning4.csproj",
+      "norm_label": "microsoft.aspnetcore.authentication.jwtbearer (10.0.10)"
+    },
+    {
       "label": "Microsoft.AspNetCore.OpenApi (10.0.10)",
       "file_type": "code",
       "source_file": "learning4.csproj",
@@ -3878,6 +4422,17 @@
       "community": 8,
       "community_name": "learning4.csproj",
       "norm_label": "npgsql.entityframeworkcore.postgresql (10.0.3)"
+    },
+    {
+      "label": "System.IdentityModel.Tokens.Jwt (8.23.0)",
+      "file_type": "code",
+      "source_file": "learning4.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_system_identitymodel_tokens_jwt",
+      "community": 8,
+      "community_name": "learning4.csproj",
+      "norm_label": "system.identitymodel.tokens.jwt (8.23.0)"
     },
     {
       "label": "Microsoft.NET.Sdk.Web",
@@ -3939,23 +4494,57 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "Controllers/ConfirmBookingController.cs",
-      "source_location": "L6",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "controllers_confirmbookingcontroller",
-      "target": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller",
+      "source": "controllers_authcontroller",
+      "target": "controllers_authcontroller_travelapi_controllers_authcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Dto",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller",
+      "target": "csharp_namespace:349a21b0b82d5523",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "Controllers/ConfirmBookingController.cs",
-      "source_location": "L41",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "controllers_confirmbookingcontroller",
-      "target": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingrequest",
+      "source": "controllers_authcontroller",
+      "target": "csharp_namespace:d446300bce67ba14",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Services",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller",
+      "target": "csharp_namespace:d52a47b2ad10d9a4",
       "confidence_score": 1.0
     },
     {
@@ -3970,27 +4559,21 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "context": "import",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "Controllers/ConfirmBookingController.cs",
-      "source_location": "L2",
+      "source_file": "Controllers/ControllerExtensions.cs",
+      "source_location": "L5",
       "weight": 1.0,
-      "metadata": {
-        "using_kind": "namespace",
-        "target_fqn": "TravelApi.Services",
-        "scope_kind": "file"
-      },
       "_origin": "ast",
-      "source": "controllers_confirmbookingcontroller",
-      "target": "csharp_namespace:d52a47b2ad10d9a4",
+      "source": "controllers_controllerextensions",
+      "target": "csharp_namespace:d446300bce67ba14",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_customercontroller",
@@ -4001,7 +4584,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller",
@@ -4012,7 +4595,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_packagebookingcontroller",
@@ -4034,7 +4617,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_roombookingcontroller",
@@ -4055,6 +4638,46 @@
     {
       "relation": "inherits",
       "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "ControllerBase"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller",
+      "target": "controllerbase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller",
+      "target": "controllers_authcontroller_travelapi_controllers_authcontroller_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IAuthService"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller",
+      "target": "services_authservice_travelapi_services_iauthservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
       "source_file": "Controllers/ConfirmBookingController.cs",
       "source_location": "L6",
       "weight": 1.0,
@@ -4067,36 +4690,10 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/ConfirmBookingController.cs",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller",
-      "target": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller_confirm",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/ConfirmBookingController.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "field",
-      "metadata": {
-        "ref_token": "IFlightBooking"
-      },
-      "_origin": "ast",
-      "source": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller",
-      "target": "services_flightbookingservice_travelapi_services_iflightbooking",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "metadata": {
         "ref_token": "ControllerBase"
@@ -4110,7 +4707,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "metadata": {
         "ref_token": "ControllerBase"
@@ -4124,7 +4721,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "metadata": {
         "ref_token": "ControllerBase"
@@ -4152,7 +4749,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "metadata": {
         "ref_token": "ControllerBase"
@@ -4174,6 +4771,143 @@
       "_origin": "ast",
       "source": "controllers_roomcontroller_travelapi_controllers_roomcontroller",
       "target": "controllerbase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginRequest"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller_login",
+      "target": "dto_auth_travelapi_dto_loginrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_travelapi_controllers_authcontroller_login",
+      "target": "services_authservice_travelapi_services_iauthservice_loginasync"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ConfirmBookingController.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_confirmbookingcontroller",
+      "target": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ConfirmBookingController.cs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_confirmbookingcontroller",
+      "target": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ConfirmBookingController.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Services",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_confirmbookingcontroller",
+      "target": "csharp_namespace:d52a47b2ad10d9a4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ConfirmBookingController.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller",
+      "target": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller_confirm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ConfirmBookingController.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IFlightBooking"
+      },
+      "_origin": "ast",
+      "source": "controllers_confirmbookingcontroller_travelapi_controllers_confirmbookingcontroller",
+      "target": "services_flightbookingservice_travelapi_services_iflightbooking",
       "confidence_score": 1.0
     },
     {
@@ -4251,12 +4985,81 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "Controllers/CustomerController.cs",
+      "source_file": "Controllers/ControllerExtensions.cs",
       "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_controllerextensions",
+      "target": "controllers_controllerextensions_travelapi_controllers_controllerextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ControllerExtensions.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_controllerextensions_travelapi_controllers_controllerextensions",
+      "target": "controllers_controllerextensions_travelapi_controllers_controllerextensions_iscurrentcustomer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ControllerExtensions.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ControllerBase"
+      },
+      "_origin": "ast",
+      "source": "controllers_controllerextensions_travelapi_controllers_controllerextensions_iscurrentcustomer",
+      "target": "controllers_controllerextensions_cs_controllerbase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/ControllerExtensions.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Guid"
+      },
+      "_origin": "ast",
+      "source": "controllers_controllerextensions_travelapi_controllers_controllerextensions_iscurrentcustomer",
+      "target": "controllers_controllerextensions_cs_guid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/CustomerController.cs",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_customercontroller",
       "target": "controllers_customercontroller_travelapi_controllers_customercontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/CustomerController.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Dto",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_customercontroller",
+      "target": "csharp_namespace:349a21b0b82d5523",
       "confidence_score": 1.0
     },
     {
@@ -4319,7 +5122,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_customercontroller_travelapi_controllers_customercontroller",
@@ -4330,7 +5133,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -4345,7 +5148,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "attribute",
       "metadata": {
@@ -4360,7 +5163,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -4375,7 +5178,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -4390,15 +5193,15 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
-        "ref_token": "Customer"
+        "ref_token": "RegisterRequest"
       },
       "_origin": "ast",
       "source": "controllers_customercontroller_travelapi_controllers_customercontroller_register",
-      "target": "entities_customer_travelapi_entities_customer",
+      "target": "dto_auth_travelapi_dto_registerrequest",
       "confidence_score": 1.0
     },
     {
@@ -4407,7 +5210,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "Controllers/CustomerController.cs",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_customercontroller_travelapi_controllers_customercontroller_register",
@@ -4561,7 +5364,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller",
@@ -4572,7 +5375,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L60",
+      "source_location": "L82",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller",
@@ -4584,7 +5387,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -4601,7 +5404,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -4618,7 +5421,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -4634,7 +5437,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L37",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller",
@@ -4645,7 +5448,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller",
@@ -4656,7 +5459,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L26",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller",
@@ -4667,7 +5470,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L48",
+      "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller",
@@ -4678,7 +5481,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L12",
+      "source_location": "L14",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -4693,7 +5496,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -4708,7 +5511,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0,
       "context": "attribute",
       "metadata": {
@@ -4723,7 +5526,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -4738,7 +5541,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -4747,168 +5550,6 @@
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getall",
       "target": "controllers_flightbookingcontroller_cs_task",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getall",
-      "target": "services_flightbookingservice_travelapi_services_iflightbooking_getallasync"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "metadata": {
-        "ref_token": "Guid"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_create",
-      "target": "controllers_flightbookingcontroller_cs_guid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L26",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "metadata": {
-        "ref_token": "Guid"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
-      "target": "controllers_flightbookingcontroller_cs_guid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L48",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "metadata": {
-        "ref_token": "Guid"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_updatepreferences",
-      "target": "controllers_flightbookingcontroller_cs_guid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "return_type",
-      "metadata": {
-        "ref_token": "Task"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_create",
-      "target": "controllers_flightbookingcontroller_cs_task",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L26",
-      "weight": 1.0,
-      "context": "return_type",
-      "metadata": {
-        "ref_token": "Task"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
-      "target": "controllers_flightbookingcontroller_cs_task",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L48",
-      "weight": 1.0,
-      "context": "return_type",
-      "metadata": {
-        "ref_token": "Task"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_updatepreferences",
-      "target": "controllers_flightbookingcontroller_cs_task",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "metadata": {
-        "ref_token": "IActionResult"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_create",
-      "target": "controllers_flightbookingcontroller_cs_iactionresult",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L26",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "metadata": {
-        "ref_token": "IActionResult"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
-      "target": "controllers_flightbookingcontroller_cs_iactionresult",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L48",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "metadata": {
-        "ref_token": "IActionResult"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_updatepreferences",
-      "target": "controllers_flightbookingcontroller_cs_iactionresult",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L26",
-      "weight": 1.0,
-      "context": "attribute",
-      "metadata": {
-        "ref_token": "HttpGet"
-      },
-      "_origin": "ast",
-      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
-      "target": "controllers_flightbookingcontroller_cs_httpget",
       "confidence_score": 1.0
     },
     {
@@ -4920,6 +5561,168 @@
       "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getall",
+      "target": "services_flightbookingservice_travelapi_services_iflightbooking_getallasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Guid"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_create",
+      "target": "controllers_flightbookingcontroller_cs_guid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Guid"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
+      "target": "controllers_flightbookingcontroller_cs_guid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Guid"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_updatepreferences",
+      "target": "controllers_flightbookingcontroller_cs_guid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_create",
+      "target": "controllers_flightbookingcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
+      "target": "controllers_flightbookingcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_updatepreferences",
+      "target": "controllers_flightbookingcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_create",
+      "target": "controllers_flightbookingcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
+      "target": "controllers_flightbookingcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_updatepreferences",
+      "target": "controllers_flightbookingcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpGet"
+      },
+      "_origin": "ast",
+      "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
+      "target": "controllers_flightbookingcontroller_cs_httpget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/FlightBookingController.cs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_getbyid",
       "target": "services_flightbookingservice_travelapi_services_iflightbooking_getbyidasync"
     },
@@ -4927,7 +5730,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L37",
+      "source_location": "L49",
       "weight": 1.0,
       "context": "attribute",
       "metadata": {
@@ -4942,7 +5745,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L37",
+      "source_location": "L49",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -4959,7 +5762,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L40",
+      "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_create",
@@ -4969,7 +5772,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L48",
+      "source_location": "L65",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -4984,7 +5787,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L48",
+      "source_location": "L65",
       "weight": 1.0,
       "context": "attribute",
       "metadata": {
@@ -5001,7 +5804,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L51",
+      "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_flightbookingcontroller_travelapi_controllers_flightbookingcontroller_updatepreferences",
@@ -5011,7 +5814,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L62",
+      "source_location": "L84",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -5026,7 +5829,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/FlightBookingController.cs",
-      "source_location": "L63",
+      "source_location": "L85",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -5041,7 +5844,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_packagebookingcontroller",
@@ -5053,7 +5856,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -5069,7 +5872,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_packagebookingcontroller_travelapi_controllers_packagebookingcontroller",
@@ -5080,7 +5883,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L10",
+      "source_location": "L12",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -5095,7 +5898,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -5110,7 +5913,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "attribute",
       "metadata": {
@@ -5125,7 +5928,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -5140,7 +5943,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -5157,7 +5960,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L20",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_packagebookingcontroller_travelapi_controllers_packagebookingcontroller_book",
@@ -5167,7 +5970,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/PackageBookingController.cs",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -5476,7 +6279,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_roombookingcontroller",
@@ -5488,7 +6291,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -5505,7 +6308,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -5521,7 +6324,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L25",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_roombookingcontroller_travelapi_controllers_roombookingcontroller",
@@ -5532,7 +6335,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_roombookingcontroller_travelapi_controllers_roombookingcontroller",
@@ -5543,7 +6346,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L11",
+      "source_location": "L13",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -5558,7 +6361,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -5573,7 +6376,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "attribute",
       "metadata": {
@@ -5588,7 +6391,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -5603,7 +6406,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -5620,7 +6423,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L21",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_roombookingcontroller_travelapi_controllers_roombookingcontroller_getall",
@@ -5630,7 +6433,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L25",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -5645,7 +6448,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L25",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -5660,7 +6463,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L25",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -5675,7 +6478,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L25",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "attribute",
       "metadata": {
@@ -5690,7 +6493,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L25",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -5707,7 +6510,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "Controllers/RoomBookingController.cs",
-      "source_location": "L28",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "controllers_roombookingcontroller_travelapi_controllers_roombookingcontroller_create",
@@ -6267,6 +7070,23 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer",
+      "target": "csharp_namespace:b01833f106e2e1a9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "Migrations/AppDbContextModelSnapshot.cs",
       "source_location": "L7",
       "weight": 1.0,
@@ -6285,7 +7105,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Program.cs",
-      "source_location": "L2",
+      "source_location": "L4",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -6301,8 +7121,25 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "csharp_namespace:b01833f106e2e1a9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -6380,6 +7217,17 @@
       "_origin": "ast",
       "source": "services_roomservice",
       "target": "csharp_namespace:b01833f106e2e1a9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Data/AppDbContext.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_appdbcontext_travelapi_data_appdbcontext",
+      "target": "data_appdbcontext_travelapi_data_appdbcontext_onmodelcreating",
       "confidence_score": 1.0
     },
     {
@@ -6489,8 +7337,23 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "AppDbContext"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice",
+      "target": "data_appdbcontext_travelapi_data_appdbcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -6559,6 +7422,189 @@
       "_origin": "ast",
       "source": "services_roomservice_travelapi_services_roomservice",
       "target": "data_appdbcontext_travelapi_data_appdbcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Data/AppDbContext.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "_origin": "ast",
+      "source": "data_appdbcontext_travelapi_data_appdbcontext_onmodelcreating",
+      "target": "data_appdbcontext_cs_modelbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "dto_auth",
+      "target": "csharp_namespace:349a21b0b82d5523",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "dto_auth",
+      "target": "dto_auth_travelapi_dto_authresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "dto_auth",
+      "target": "dto_auth_travelapi_dto_loginrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Dto/Auth.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "dto_auth",
+      "target": "dto_auth_travelapi_dto_registerrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Dto",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "csharp_namespace:349a21b0b82d5523",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/CustomerService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TravelApi.Dto",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_customerservice",
+      "target": "csharp_namespace:349a21b0b82d5523",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/CustomerService.cs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RegisterRequest"
+      },
+      "_origin": "ast",
+      "source": "services_customerservice_travelapi_services_customerservice_registerasync",
+      "target": "dto_auth_travelapi_dto_registerrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/CustomerService.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RegisterRequest"
+      },
+      "_origin": "ast",
+      "source": "services_customerservice_travelapi_services_icustomerservice_registerasync",
+      "target": "dto_auth_travelapi_dto_registerrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginRequest"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice_loginasync",
+      "target": "dto_auth_travelapi_dto_loginrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginRequest"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_iauthservice_loginasync",
+      "target": "dto_auth_travelapi_dto_loginrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "AuthResponse"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice_loginasync",
+      "target": "dto_auth_travelapi_dto_authresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "AuthResponse"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_iauthservice_loginasync",
+      "target": "dto_auth_travelapi_dto_authresponse",
       "confidence_score": 1.0
     },
     {
@@ -6632,7 +7678,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -6776,7 +7822,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L45",
+      "source_location": "L62",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -6791,9 +7837,9 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0,
-      "context": "parameter_type",
+      "context": "generic_arg",
       "metadata": {
         "ref_token": "Customer"
       },
@@ -6806,7 +7852,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -6821,9 +7867,9 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
-      "context": "parameter_type",
+      "context": "generic_arg",
       "metadata": {
         "ref_token": "Customer"
       },
@@ -7710,6 +8756,28 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer",
+      "target": "csharp_namespace:f8717fe99859869d",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer",
+      "target": "csharp_namespace:f8717fe99859869d",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "Migrations/AppDbContextModelSnapshot.cs",
       "source_location": "L11",
       "weight": 1.0,
@@ -7872,6 +8940,20 @@
       },
       "_origin": "ast",
       "source": "migrations_20260918133142_mergetravellerintocustomer_designer_learning4_migrations_mergetravellerintocustomer",
+      "target": "migration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Migration"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer",
       "target": "migration",
       "confidence_score": 1.0
     },
@@ -8508,6 +9590,106 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer_buildtargetmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_learning4_migrations_addauthfieldstocustomer_down",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_learning4_migrations_addauthfieldstocustomer_up",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.Designer.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_designer_learning4_migrations_addauthfieldstocustomer_buildtargetmodel",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_designer_cs_modelbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_learning4_migrations_addauthfieldstocustomer_up",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_cs_migrationbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260922161602_AddAuthFieldsToCustomer.cs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260922161602_addauthfieldstocustomer_learning4_migrations_addauthfieldstocustomer_down",
+      "target": "migrations_20260922161602_addauthfieldstocustomer_cs_migrationbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "Migrations/AppDbContextModelSnapshot.cs",
       "source_location": "L13",
       "weight": 1.0,
@@ -8561,7 +9743,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Program.cs",
-      "source_location": "L3",
+      "source_location": "L6",
       "weight": 1.0,
       "metadata": {
         "using_kind": "namespace",
@@ -8577,7 +9759,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Program.cs",
-      "source_location": "L52",
+      "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
       "source": "program",
@@ -8763,34 +9945,45 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "Services/CustomerService.cs",
-      "source_location": "L6",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "services_customerservice",
+      "source": "services_authservice",
       "target": "csharp_namespace:d52a47b2ad10d9a4",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "Services/CustomerService.cs",
-      "source_location": "L16",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "services_customerservice",
-      "target": "services_customerservice_travelapi_services_customerservice",
+      "source": "services_authservice",
+      "target": "services_authservice_travelapi_services_authservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "services_authservice_travelapi_services_iauthservice",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "services_customerservice",
-      "target": "services_customerservice_travelapi_services_icustomerservice",
+      "target": "csharp_namespace:d52a47b2ad10d9a4",
       "confidence_score": 1.0
     },
     {
@@ -8846,8 +10039,171 @@
     {
       "relation": "implements",
       "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "IAuthService"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice",
+      "target": "services_authservice_travelapi_services_iauthservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_iauthservice",
+      "target": "services_authservice_travelapi_services_iauthservice_loginasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Error"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_iauthservice_loginasync",
+      "target": "services_authservice_cs_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Result"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_iauthservice_loginasync",
+      "target": "services_authservice_cs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_iauthservice_loginasync",
+      "target": "services_authservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice_loginasync",
+      "target": "services_authservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Result"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice_loginasync",
+      "target": "services_authservice_cs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Error"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice_loginasync",
+      "target": "services_authservice_cs_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IConfiguration"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice",
+      "target": "iconfiguration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_travelapi_services_authservice",
+      "target": "services_authservice_travelapi_services_authservice_loginasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L16",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_customerservice",
+      "target": "services_customerservice_travelapi_services_customerservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/CustomerService.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_customerservice",
+      "target": "services_customerservice_travelapi_services_icustomerservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/CustomerService.cs",
+      "source_location": "L17",
       "weight": 1.0,
       "metadata": {
         "ref_token": "ICustomerService"
@@ -8861,7 +10217,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "services_customerservice_travelapi_services_icustomerservice",
@@ -8872,7 +10228,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "services_customerservice_travelapi_services_icustomerservice",
@@ -8883,7 +10239,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "services_customerservice_travelapi_services_icustomerservice",
@@ -8894,7 +10250,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -8909,7 +10265,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -8924,7 +10280,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L50",
+      "source_location": "L67",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -8939,7 +10295,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L45",
+      "source_location": "L62",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -8954,7 +10310,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -8969,7 +10325,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -8984,7 +10340,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -8999,7 +10355,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -9014,7 +10370,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -9029,7 +10385,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L50",
+      "source_location": "L67",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -9044,7 +10400,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L45",
+      "source_location": "L62",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -9059,7 +10415,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -9068,13 +10424,28 @@
       "_origin": "ast",
       "source": "services_customerservice_travelapi_services_icustomerservice_deletebyidasync",
       "target": "services_customerservice_cs_guid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/CustomerService.cs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Regex"
+      },
+      "_origin": "ast",
+      "source": "services_customerservice_travelapi_services_customerservice",
+      "target": "regex",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L50",
+      "source_location": "L67",
       "weight": 1.0,
       "_origin": "ast",
       "source": "services_customerservice_travelapi_services_customerservice",
@@ -9085,7 +10456,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L45",
+      "source_location": "L62",
       "weight": 1.0,
       "_origin": "ast",
       "source": "services_customerservice_travelapi_services_customerservice",
@@ -9096,7 +10467,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "Services/CustomerService.cs",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "services_customerservice_travelapi_services_customerservice",
@@ -10275,11 +11646,11 @@
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
-        "ref_token": "Result"
+        "ref_token": "Error"
       },
       "_origin": "ast",
       "source": "services_packageservice_travelapi_services_ipackageservice_bookasync",
-      "target": "result",
+      "target": "services_packageservice_cs_error",
       "confidence_score": 1.0
     },
     {
@@ -10290,11 +11661,11 @@
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
-        "ref_token": "Error"
+        "ref_token": "Result"
       },
       "_origin": "ast",
       "source": "services_packageservice_travelapi_services_ipackageservice_bookasync",
-      "target": "services_packageservice_cs_error",
+      "target": "services_packageservice_cs_result",
       "confidence_score": 1.0
     },
     {
@@ -10309,7 +11680,7 @@
       },
       "_origin": "ast",
       "source": "services_packageservice_travelapi_services_packageservice_bookasync",
-      "target": "result",
+      "target": "services_packageservice_cs_result",
       "confidence_score": 1.0
     },
     {
@@ -11251,6 +12622,26 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "learning4",
+      "target": "nuget_bcrypt_net_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "learning4.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "learning4",
+      "target": "nuget_microsoft_aspnetcore_authentication_jwtbearer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "learning4.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "learning4",
       "target": "nuget_microsoft_aspnetcore_openapi",
       "confidence_score": 1.0
     },
@@ -11275,6 +12666,16 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "learning4.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "learning4",
+      "target": "nuget_system_identitymodel_tokens_jwt",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "learning4.csproj",
@@ -11286,5 +12687,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "32721e0906aa7f7a906a76eff119e3336cc4f6f4"
+  "built_at_commit": "d42011d8983fadfd353927788d4acc7dd82b68f1"
 }
